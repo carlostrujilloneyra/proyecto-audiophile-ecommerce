@@ -17,6 +17,11 @@ export const GlobalStyles = createGlobalStyle`
 		margin: auto;
 	}
 
+	h1{
+		font-size: 5.6rem;
+		color: white;
+	}
+
 	h4{
 		color: #000;
 		font-size: 1.8rem;
