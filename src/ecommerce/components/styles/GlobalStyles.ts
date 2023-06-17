@@ -12,8 +12,15 @@ export const GlobalStyles = createGlobalStyle`
 		font-family: 'Manrope', sans-serif;
 	}
 
-	h1{
-		font-size: 4rem;
+	.container{
+		max-width: 125rem;
+		margin: auto;
+	}
+
+	h4{
+		color: #000;
+		font-size: 1.8rem;
+		text-transform: uppercase;
 	}
 
 `;
