@@ -14,28 +14,28 @@ export const routes: Route[] = [
 		to: '/',
 		path: '/',
 		Component: HomePage,
-		name: 'Home'
+		name: 'Inicio'
 	},
 
 	{
 		to: '/headphones',
 		path: '/headphones',
 		Component: HeadphonePage,
-		name: 'Headphones'
+		name: 'Audífonos'
 	},
 
 	{
 		to: '/speakers',
 		path: '/speakers',
 		Component: SpeakerPage,
-		name: 'Speakers'
+		name: 'Altavoces'
 	},
 
 	{
 		to: '/earphones',
 		path: '/earphones',
 		Component: EarphonePage,
-		name: 'Earphones'
+		name: 'Auriculares'
 	}
 
 ];

@@ -27,7 +27,7 @@ export const HeaderContainer = styled.header`
 `;
 
 // Estilos para el nav
-export const Nav = styled.nav`
+export const NavContainer = styled.nav`
 	display: none;
 
 	@media (width >= 1024px){
@@ -41,13 +41,27 @@ export const List = styled.ul`
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	transition: all .4s;
 
 	@media (width >= 1024px){
 		flex-direction: row;
+
+		&:hover li{
+			opacity: 0;
+			transition: all .4s;
+		}
+
 	}
 
 	li{
-		margin: 0 1.2rem;
+		margin: 0 1.6rem;
+		transition: all .4s;
+
+		&:hover{
+			opacity: 1;
+			transition: all .4s;
+		}
+
 	}
 
 `;
