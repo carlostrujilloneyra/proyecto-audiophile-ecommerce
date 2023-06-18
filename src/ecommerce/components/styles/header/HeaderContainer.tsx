@@ -12,6 +12,10 @@ export const HeaderContainer = styled.header`
 	justify-items: center;
 	padding: 3.2rem 2.4rem;
 
+	img{
+		cursor: pointer;
+	}
+
 	@media (width >= 600px){
 		padding: 3.6rem 4rem;
 	}
@@ -23,4 +27,27 @@ export const HeaderContainer = styled.header`
 `;
 
 // Estilos para el nav
+export const Nav = styled.nav`
+	display: none;
 
+	@media (width >= 1024px){
+		display: block;
+	}
+
+`;
+
+export const List = styled.ul`
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	@media (width >= 1024px){
+		flex-direction: row;
+	}
+
+	li{
+		margin: 0 1.2rem;
+	}
+
+`;

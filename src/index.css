@@ -1,6 +1,16 @@
 
 /* Algunos estilos para evitar crear tantos styled-components */
 
+/* Estilos condicionados */
+
+
+a{
+	color: white;
+	font-size: 1.3rem;
+	font-weight: bolder;
+	text-transform: uppercase;
+}
+
 /* Categorías compartidas */
 .categories-shared{
 	padding: 2.4rem;
