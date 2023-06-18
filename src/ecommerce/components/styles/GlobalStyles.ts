@@ -13,7 +13,7 @@ export const GlobalStyles = createGlobalStyle`
 	}
 
 	.container{
-		max-width: 125rem;
+		max-width: 130rem;
 		margin: auto;
 	}
 
@@ -26,6 +26,12 @@ export const GlobalStyles = createGlobalStyle`
 		color: #000;
 		font-size: 1.8rem;
 		text-transform: uppercase;
+	}
+
+	p{
+		color: #c6c6c6;
+		line-height: 1.4rem;
+		font-size: 1.5rem;
 	}
 
 `;

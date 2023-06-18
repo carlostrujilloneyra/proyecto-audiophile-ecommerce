@@ -40,6 +40,7 @@ export const List = styled.ul`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	list-style: none;
 	justify-content: center;
 	transition: all .4s;
 
@@ -61,7 +62,43 @@ export const List = styled.ul`
 			opacity: 1;
 			transition: all .4s;
 		}
-
 	}
+
+	a{
+	color: white;
+	font-size: 1.3rem;
+	font-weight: bolder;
+	position: relative;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: all .4s;
+
+	&:hover{
+		color: #D87D4A;
+		font-size: 1.6rem;
+		transition: all .4s;
+	}
+
+	&:hover::before{
+		/* text-decoration: underline; */
+		width: 100%;
+		left: 0;
+		opacity: 1;
+		transition: all .4s;
+	}
+
+	&::before{
+		background-color: #D87D4A;
+		bottom: -.6rem;
+		content: '';
+		position: absolute;
+		width: 5%;
+		left: -1.4rem;
+		height: .18rem;
+		opacity: 0;
+		transition: all .4s;
+	}
+}
+
 
 `;
