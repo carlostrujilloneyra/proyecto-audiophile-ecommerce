@@ -18,6 +18,7 @@ a{
 	transition: all .4s;
 
 	&:hover{
+		color: #D87D4A;
 		font-size: 1.6rem;
 		transition: all .4s;
 	}
@@ -31,7 +32,7 @@ a{
 	}
 
 	&::before{
-		background-color: white;
+		background-color: #D87D4A;
 		bottom: -.6rem;
 		content: '';
 		position: absolute;
