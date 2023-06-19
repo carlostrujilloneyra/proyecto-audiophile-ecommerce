@@ -10,14 +10,15 @@
 
 /* Categorías compartidas */
 .categories-shared{
-	padding: 2.4rem;
+	padding: 8rem 2.4rem;
 
 	@media (width >=600px){
-		padding: 3.2rem;
+		padding: 12rem 3.2rem;
+		padding-bottom: 8rem;
 	}
 
 	@media (width >= 1024px){
-		padding: 12rem;
+		padding: 11rem 8rem;
 	}
 }
 
@@ -28,4 +29,17 @@
 	align-items: center;
 	text-align: center;
 	transform: translateY(-5rem);
+}
+
+.container-first-product{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	@media (width >= 1024px){
+		align-items: flex-start;
+		justify-content: flex-start;
+	}
+
 }

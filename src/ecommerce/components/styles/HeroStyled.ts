@@ -19,13 +19,13 @@ export const HeroStyled = styled.div`
 	@media (width >= 1024px){
 		align-items: flex-start;
 		height: 66rem;
-		padding: 10rem 4rem;
+		padding: 10rem 8rem;
 	}
 
 	h3{
 		color: #8c8c8c;
 		font-size: 1.4rem;
-		letter-spacing: .3rem;
+		letter-spacing: .5rem;
 		margin-bottom: 1.6rem;
 		text-transform: uppercase;
 

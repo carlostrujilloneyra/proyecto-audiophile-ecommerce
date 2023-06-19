@@ -13,6 +13,13 @@ export const SimpleButon = styled.button`
 	margin-top: 1.6rem;
 	outline: none;
 	text-transform: uppercase;
+	transition: all .4s;
+
+	&:hover{
+		color: #d87c4a;
+		cursor: pointer;
+		transition: all .4s;
+	}
 
 	img{
 		width: .6rem;

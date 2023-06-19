@@ -22,6 +22,7 @@ export const HeaderContainer = styled.header`
 
 	@media (width >= 1024px){
 		grid-template-columns: 14.5rem 1fr 2.5rem;
+		padding: 3.6rem 8rem;
 	}
 
 `;
@@ -68,6 +69,7 @@ export const List = styled.ul`
 	color: white;
 	font-size: 1.3rem;
 	font-weight: bolder;
+	letter-spacing: .1rem;
 	position: relative;
 	text-decoration: none;
 	text-transform: uppercase;

@@ -30,7 +30,7 @@ export const GlobalStyles = createGlobalStyle`
 
 	p{
 		color: #c6c6c6;
-		line-height: 1.4rem;
+		line-height: 1.6rem;
 		font-size: 1.5rem;
 	}
 
