@@ -19,6 +19,7 @@
 
 	@media (width >= 1024px){
 		padding: 11rem 8rem;
+		padding-bottom: 7rem;
 	}
 }
 

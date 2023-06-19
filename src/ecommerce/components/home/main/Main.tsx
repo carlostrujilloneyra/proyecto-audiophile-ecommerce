@@ -5,7 +5,7 @@ export const Main = () => {
 	return (
 		<>
 			<MainHomeStyled className="container">
-				<FirstProduct secondary/>
+				<FirstProduct />
 			</MainHomeStyled>
 		</>
 	)

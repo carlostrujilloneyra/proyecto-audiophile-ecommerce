@@ -6,6 +6,7 @@ export const FirstProductStyled = styled.section`
 	grid-template-rows: max-content max-content;
 	row-gap: 3.2rem;
 	padding: 5rem 2.4rem;
+	
 
 	@media (width >= 600px){
 		padding: 6.4rem 4.8rem;
@@ -15,8 +16,8 @@ export const FirstProductStyled = styled.section`
 	@media (width >= 1024px){
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: repeat(1, 1fr);
-		padding: 8rem 6rem;
-		column-gap: 4rem;
+		padding: 8rem 4rem;
+		column-gap: 4.8rem;
 		row-gap: 0;
 		overflow: hidden;
 	}
@@ -30,10 +31,17 @@ export const FirstProductStyled = styled.section`
 	img{
 		width: 17.3rem;
 		height: 20.8rem;
+		transition: all .4s;
 
 		@media (width >= 600px){
 			width: 19.8rem;
 			height: 23.8rem;
+
+			&:hover{
+				transform: scale(1.1);
+				transition: all .4s;
+			}
+
 		}
 
 		@media (width >= 1024px){

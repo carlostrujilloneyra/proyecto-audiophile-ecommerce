@@ -9,4 +9,15 @@ export const CategorySharedCard = styled.div`
 	justify-content: center;
 	align-items: center;
 	padding: 2.4rem;
+
+	img{
+		transition: all .4s;
+		@media (width >= 1024px){
+			&:hover{
+				transform: scale(1.2);
+				transition: all .4s;
+			}
+		}
+	}
+
 `;

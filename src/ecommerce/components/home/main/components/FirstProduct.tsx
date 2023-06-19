@@ -1,11 +1,7 @@
 import { infoProducts } from "../../../../data/home/info-products"
 import { ButtonSecondary, FirstProductStyled } from "../../../styles"
 
-interface Props {
-	secondary?: boolean
-}
-
-export const FirstProduct = ({ secondary }: Props) => {
+export const FirstProduct = () => {
 	
 	const firstProduct = infoProducts[0];
 	const { description, image: {bg_mobile, bg_tablet, bg_desktop}, title } = firstProduct;
@@ -25,13 +21,11 @@ export const FirstProduct = ({ secondary }: Props) => {
 					<p>{description}</p>
 
 					<ButtonSecondary
-						$secondary = {secondary}
+						$secondary={true}
+						$bgColor="dark"
 					>
 						Ver producto
 					</ButtonSecondary>
-
-					<ButtonSecondary>Segunda prueba</ButtonSecondary>
-
 				</div>
 
 			</FirstProductStyled>
