@@ -24,6 +24,16 @@ export const ThirdProductStyled = styled.section`
 		border-radius: .8rem;
 		max-width: 100%;
 		width: 100%;
+		height: 100%;
+		transition: all .4s;
+
+		@media (width >= 1024px){
+			&:hover{
+				transform: scale(1.08);
+				transition: all .4s;
+			}
+		}
+
 	}
 
 `;

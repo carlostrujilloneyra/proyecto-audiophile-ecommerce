@@ -1,6 +1,6 @@
 import { infoProducts } from "../../../../data/home/info-products"
 import { ButtonSecondary } from "../../../styles";
-import { FirstContainerTP, ThirdProductStyled } from "../../../styles/containers/ThirProductStyled";
+import { FirstContainerTP, ThirdProductStyled} from "../../../styles/containers/ThirProductStyled";
 
 export const ThirdProduct = () => {
 
