@@ -11,6 +11,7 @@ export const Logo = () => {
 	return (
 		<>
 			<img
+				className="image-logo-header"
 				src="/assets/logo/logo.svg"
 				alt="logo-image"
 				onClick={handleNavigateHome}
