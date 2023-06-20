@@ -10,6 +10,7 @@ export const SimpleButon = styled.button`
 	column-gap: 1.2rem;
 	font-size: 1.3rem;
 	font-weight: 600;
+	letter-spacing: .1rem;
 	margin-top: 1.6rem;
 	outline: none;
 	text-transform: uppercase;

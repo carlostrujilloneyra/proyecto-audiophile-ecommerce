@@ -2,6 +2,7 @@ import { styled } from "styled-components";
 
 export const FirstProductStyled = styled.section`
 	background-color: #D87D4A;
+	border-radius: .8rem;
 	display: grid;
 	grid-template-rows: max-content max-content;
 	row-gap: 3.2rem;
@@ -74,7 +75,10 @@ export const FirstProductStyled = styled.section`
 		font-size: 1.5rem;
 		line-height: 1.5;
 		text-align: center;
-		width: 50%;
+
+		@media (width >= 600px){
+			width: 50%;
+		}
 
 		@media (width >= 1024px){
 			text-align: start;

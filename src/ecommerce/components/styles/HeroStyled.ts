@@ -39,6 +39,7 @@ export const HeroStyled = styled.div`
 		color: white;
 		font-size: 3.6rem;
 		font-weight: bolder;
+		letter-spacing: .2rem;
 		line-height: 1.1;
 		margin-bottom: 2.4rem;
 		text-align: center;

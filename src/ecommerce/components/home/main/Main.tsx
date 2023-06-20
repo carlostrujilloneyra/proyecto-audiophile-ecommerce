@@ -1,11 +1,13 @@
 import { MainHomeStyled } from "../../styles"
-import { FirstProduct } from "./components"
+import { FirstProduct, SecondProduct, ThirdProduct } from "./components"
 
 export const Main = () => {
 	return (
 		<>
 			<MainHomeStyled className="container">
 				<FirstProduct />
+				<SecondProduct />
+				<ThirdProduct />
 			</MainHomeStyled>
 		</>
 	)

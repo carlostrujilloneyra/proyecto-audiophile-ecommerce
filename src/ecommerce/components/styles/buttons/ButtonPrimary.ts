@@ -6,6 +6,7 @@ export const ButtonPrimary = styled.button`
 	outline: none;
 	color: white;
 	font-weight: bolder;
+	letter-spacing: .1rem;
 	margin-top: 2.8rem;
 	padding: 1.5rem 3.2rem;
 	text-transform: uppercase;

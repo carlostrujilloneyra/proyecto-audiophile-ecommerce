@@ -11,15 +11,16 @@
 /* Categorías compartidas */
 .categories-shared{
 	padding: 8rem 2.4rem;
+	padding-bottom: 5rem;
 
 	@media (width >=600px){
-		padding: 12rem 3.2rem;
-		padding-bottom: 8rem;
+		padding: 13rem 3.2rem;
+		padding-bottom: 6rem;
 	}
 
 	@media (width >= 1024px){
-		padding: 11rem 8rem;
-		padding-bottom: 7rem;
+		padding: 13rem 8rem;
+		padding-bottom: 6rem;
 	}
 }
 
