@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom';
 import { InterfaceCategoryShared } from '../../../../interfaces/categories.interface';
 import { SimpleButon } from '../../../styles/buttons';
 import { CategorySharedCard } from '../../../styles/containers';
@@ -7,8 +8,15 @@ interface Props {
 }
 
 export const CategoryShared = ({ category }: Props) => {
+
+	const navigate = useNavigate();
 	
-	const { image, name } = category;
+	const { image, name, id } = category;
+
+	const showInfo = (info: string) => {
+		const category = info.toLocaleLowerCase();
+		navigate(`/${category}`);
+	}
 
 	return (
 		<>
@@ -16,7 +24,9 @@ export const CategoryShared = ({ category }: Props) => {
 				<div className='container-category-shared'>
 					<img src={image} alt={name} className='image-category-shared' />
 					<h4>{name}</h4>
-					<SimpleButon>
+					<SimpleButon
+						onClick={() => showInfo(id)}
+					>
 					Comprar
 					<img src="/assets/icons/icon-arrow-right.svg" alt="icon-arrow" />
 				</SimpleButon>

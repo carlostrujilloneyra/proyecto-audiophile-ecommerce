@@ -9,7 +9,7 @@ export const CategoriesShared = () => {
 				<CategorySharedGrid>
 					{
 						categoriesShared.map(category => {
-							return (<CategoryShared category={category} key={category.name}/>)
+							return (<CategoryShared category={category} key={category.id}/>)
 						})
 					}
 				</CategorySharedGrid>
