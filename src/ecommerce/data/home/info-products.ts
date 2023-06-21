@@ -1,7 +1,8 @@
-import { ProducstHomeInterface } from '../../interfaces/products-home.interface'
+import { ProductHomeInterface } from '../../interfaces/products-home.interface'
 
-export const infoProducts: ProducstHomeInterface[] = [
+export const infoProducts: ProductHomeInterface[] = [
 	{
+		id: 'zx9 altavoz',
 		image: {
 			bg_mobile: '/assets/home/mobile/image-speaker-zx9.png',
 			bg_tablet: '/assets/home/tablet/image-speaker-zx9.png',
@@ -12,6 +13,7 @@ export const infoProducts: ProducstHomeInterface[] = [
 	},
 
 	{
+		id: 'zx7 altavoz',
 		image: {
 			bg_mobile: '/assets/home/mobile/image-speaker-zx7.jpg',
 			bg_tablet: '/assets/home/tablet/image-speaker-zx7.jpg',
@@ -21,6 +23,7 @@ export const infoProducts: ProducstHomeInterface[] = [
 	},
 
 	{
+		id: 'yx1 auricular',
 		image: {
 			bg_mobile: '/assets/home/mobile/image-earphones-yx1.jpg',
 			bg_tablet: '/assets/home/tablet/image-earphones-yx1.jpg',

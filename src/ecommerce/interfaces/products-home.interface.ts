@@ -1,5 +1,6 @@
 
-export interface ProducstHomeInterface {
+export interface ProductHomeInterface {
+	id?: string,
 	image: Image,
 	title: string,
 	description?:string

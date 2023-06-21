@@ -321,7 +321,7 @@ export const products: productInterface[] = [
 	},
 
 	{
-		id: 'yx1 wireless',
+		id: 'yx1 auricular',
 		category: 'earphones',
 		name: 'Auricular inalámbrico YX1',
 		description: 'Adapte su experiencia auditiva con controladores dinámicos personalizados de los nuevos auriculares inalámbricos YX1. Disfruta de un increíble sonido de alta fidelidad incluso en entornos ruidosos con su función de cancelación activa de ruido.',
