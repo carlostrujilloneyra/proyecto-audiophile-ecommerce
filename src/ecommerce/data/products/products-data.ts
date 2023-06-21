@@ -4,7 +4,7 @@ import { productInterface } from '../../interfaces/category.product.interface';
 // Segunda categoría: speakers
 // Tercera categoría: earphones
 
-export const categories: productInterface[] = [
+export const products: productInterface[] = [
 	{
 		id: 'xx99 mark one',
 		category: 'headphones',
