@@ -3,7 +3,7 @@ import { products } from "../data/products/products-data";
 
 // Función que devolverá los productos de acuerdo a la categoría
 
-export const getProductsByCategory = (category: string): productInterface | productInterface[] => {
+export const getProductsByCategory = (category: string): productInterface[] => {
 
 	const validCategories: string[] = ['headphones', 'speakers', 'earphones'];
 	

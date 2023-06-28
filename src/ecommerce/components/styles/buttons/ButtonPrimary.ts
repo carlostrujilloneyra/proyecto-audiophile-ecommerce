@@ -17,7 +17,7 @@ export const ButtonPrimary = styled.button`
 		cursor: pointer;
 		transition: all .4s;
 	}
-
+	
 `;
 
 interface Props{

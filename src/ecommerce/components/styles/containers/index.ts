@@ -1,3 +1,4 @@
+export * from './HeroCategory';
 export * from './CategorySharedGrid';
 export * from './CategorySharedCard';
 export * from './FirstProductStyled';

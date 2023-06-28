@@ -78,6 +78,7 @@ export const FooterTopSP = styled.div`
 		text-align: center;
 		line-height: 1.6;
 		margin-bottom: 2.4rem;
+		opacity: .8;
 
 		@media (width >= 1024px){
 		text-align: start;

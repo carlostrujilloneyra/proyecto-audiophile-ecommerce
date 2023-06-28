@@ -3,9 +3,11 @@
 .image-logo-header{
 	transition: all .4s;
 
-	&:hover{
-		filter: invert(40%) sepia(42%) saturate(680%) hue-rotate(335deg) brightness(97%) contrast(89%);
-		transition: all .4s;
+	@media (width >= 1024px){
+		&:hover{
+			filter: invert(40%) sepia(42%) saturate(680%) hue-rotate(335deg) brightness(97%) contrast(89%);
+			transition: all .4s;
+		}
 	}
 
 }

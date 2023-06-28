@@ -4,7 +4,7 @@ export const HeaderContainer = styled.header`
 	display: grid;
 	align-content: center;
 	align-items: center;
-	background-color: #141414;
+	background-color: #000;
 	border-bottom: .2rem solid #2E2E2E;
 	grid-template-columns: 2rem 1fr 2.5rem;
 	height: 9.6rem;

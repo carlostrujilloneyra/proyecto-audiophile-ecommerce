@@ -22,19 +22,6 @@ export const HeroStyled = styled.div`
 		padding: 10rem 8rem;
 	}
 
-	h3{
-		color: #8c8c8c;
-		font-size: 1.4rem;
-		letter-spacing: .5rem;
-		margin-bottom: 1.6rem;
-		text-transform: uppercase;
-
-		@media (width >= 600px){
-			margin-bottom: 2.4rem;
-		}
-
-	}
-
 	h1{
 		color: white;
 		font-size: 3.6rem;

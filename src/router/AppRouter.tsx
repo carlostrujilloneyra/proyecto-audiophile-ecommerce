@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom"
 import { Header } from "../ecommerce/components/shared"
 import { routes } from "./routes"
-import { HomePage, NotFoundPage } from "../ecommerce/pages"
+import { HomePage, NotFoundPage, ProductPage } from "../ecommerce/pages"
 
 export const AppRouter = () => {
 	return (
@@ -20,6 +20,8 @@ export const AppRouter = () => {
 						return <Route key= {name} path={path} element={<Component />} />
 					})
 				}
+				
+				<Route path='product/:productId' element={<ProductPage />} />
 
 				{/* Ruta que no existe */}
 				<Route path='*' element={<NotFoundPage />} />

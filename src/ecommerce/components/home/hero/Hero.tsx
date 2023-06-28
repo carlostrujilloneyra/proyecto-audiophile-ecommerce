@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { heroData } from "../../../data/home/hero"
-import { ButtonPrimary, HeroStyled } from "../../styles"
+import { ButtonPrimary, HeroStyled, NewProduct } from "../../styles"
 
 export const Hero = () => {
 
@@ -29,7 +29,7 @@ export const Hero = () => {
 				style={{backgroundImage: `url(${bgImage})`}}
 				className="container"
 			>
-				<h3>{subtitle}</h3>
+				<NewProduct $color="#8c8c8c">Producto nuevo</NewProduct>
 				<h1>{title}</h1>
 				<p>{description}</p>
 				<ButtonPrimary>Ver producto</ButtonPrimary>
