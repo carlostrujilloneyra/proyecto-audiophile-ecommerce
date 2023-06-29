@@ -12,6 +12,12 @@
 
 }
 
+.go-to-product{
+	display: block;
+	color: white;
+	text-decoration: none;
+}
+
 /* Estilos condicionados */
 .container-hamburguer{
 	@media (width >= 1024px){

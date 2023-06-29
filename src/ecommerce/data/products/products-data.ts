@@ -6,7 +6,7 @@ import { productInterface } from '../../interfaces/category.product.interface';
 
 export const products: productInterface[] = [
 	{
-		id: 'xx99 mark one',
+		id: 'xx99-mark-one',
 		newProduct: true,
 		category: 'headphones',
 		name: 'Audífonos XX99 Mark I',
@@ -66,7 +66,7 @@ export const products: productInterface[] = [
 	},
 
 	{
-		id: 'xx99 mark two',
+		id: 'xx99-mark-two',
 		category: 'headphones',
 		changeColumn: true,
 		name: 'Audífonos XX99 Mark II',
@@ -195,7 +195,7 @@ export const products: productInterface[] = [
 	},
 
 	{
-		id: 'zx7 altavoz',
+		id: 'zx7-speaker',
 		category: 'speakers',
 		newProduct: true,
 		name: 'Altavoz ZX7',
@@ -260,7 +260,7 @@ export const products: productInterface[] = [
 	},
 
 	{
-		id: 'zx9 altavoz',
+		id: 'zx9-speaker',
 		category: 'speakers',
 		changeColumn: true,
 		name: 'Altavoz ZX9',
@@ -325,7 +325,7 @@ export const products: productInterface[] = [
 	},
 
 	{
-		id: 'yx1 auricular',
+		id: 'yx1-earphone',
 		category: 'earphones',
 		name: 'Auricular inalámbrico YX1',
 		description: 'Adapte su experiencia auditiva con controladores dinámicos personalizados de los nuevos auriculares inalámbricos YX1. Disfruta de un increíble sonido de alta fidelidad incluso en entornos ruidosos con su función de cancelación activa de ruido.',

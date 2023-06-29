@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { productInterface } from '../../../interfaces/category.product.interface';
 import { ButtonPrimary, NewProduct, ProductStyled } from '../../styles';
 
@@ -7,7 +8,11 @@ interface Props{
 
 export const Product = ({ product }: Props) => {
 	
-	const { changeColumn, newProduct, image: {bg_mobile, bg_tablet, bg_desktop}, name, description } = product;
+	const { id, changeColumn, newProduct, image: { bg_mobile, bg_tablet, bg_desktop }, name, description } = product;
+	
+	// const showInfo = (id: string | undefined) => {
+	// 	console.log(id)
+	// }
 
 	return (
 		<>
@@ -27,7 +32,9 @@ export const Product = ({ product }: Props) => {
 
 					<h2>{name}</h2>
 					<p>{description}</p>
-					<ButtonPrimary>Ver producto</ButtonPrimary>
+					<ButtonPrimary>
+						<Link to={`/product/${id}`} className='go-to-product' >Ver producto</Link>
+					</ButtonPrimary>
 
 				</div>
 

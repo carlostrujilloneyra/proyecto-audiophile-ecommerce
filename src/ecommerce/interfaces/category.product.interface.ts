@@ -6,11 +6,11 @@ export interface productInterface {
 	category?: string,
 	name?: string,
 	description?: string,
-	image: Image,
+	image?: Image,
 	features?: Feature,
 	price?: number,
 	amountInitial?: number
-	includes: includeBoxInterface[],
+	includes?: includeBoxInterface[],
 	first_image_gallery?: imageGalleryInterface,
 	second_image_gallery?: imageGalleryInterface,
 	third_image_gallery?: imageGalleryInterface
@@ -23,17 +23,17 @@ export interface Image{
 	bg_desktop: string
 }
 
-interface Feature {
+export interface Feature {
 	first_part: string,
 	second_part: string
 }
 
-interface includeBoxInterface {
+export interface includeBoxInterface {
 	quantity: number,
 	item: string
 }
 
-interface imageGalleryInterface{
+export interface imageGalleryInterface{
 	url_mobile: string,
 	url_tablet: string,
 	url_desktop: string
