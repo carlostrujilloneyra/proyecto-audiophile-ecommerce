@@ -7,6 +7,7 @@ export interface productInterface {
 	name?: string,
 	description?: string,
 	image?: Image,
+	imageDetail?: ImageDetail,
 	features?: Feature,
 	price?: number,
 	amountInitial?: number
@@ -23,17 +24,23 @@ export interface Image{
 	bg_desktop: string
 }
 
-export interface Feature {
+interface ImageDetail{
+	bg_mobile: string,
+	bg_tablet: string,
+	bg_desktop: string
+}
+
+interface Feature {
 	first_part: string,
 	second_part: string
 }
 
-export interface includeBoxInterface {
+interface includeBoxInterface {
 	quantity: number,
 	item: string
 }
 
-export interface imageGalleryInterface{
+interface imageGalleryInterface{
 	url_mobile: string,
 	url_tablet: string,
 	url_desktop: string

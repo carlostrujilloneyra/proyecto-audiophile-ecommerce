@@ -17,6 +17,11 @@ export const products: productInterface[] = [
 			bg_tablet: '/assets/product-xx99-mark-one-headphones/tablet/image-category-page-preview.jpg',
 			bg_desktop: '/assets/product-xx99-mark-one-headphones/desktop/image-category-page-preview.jpg'
 		},
+		imageDetail: {
+			bg_mobile: '/assets/product-xx99-mark-one-headphones/mobile/image-product.jpg',
+			bg_tablet: '/assets/product-xx99-mark-one-headphones/tablet/image-product.jpg',
+			bg_desktop: '/assets/product-xx99-mark-one-headphones/desktop/image-product.jpg'
+		},
 		features: {
 			first_part: 'Al igual que los auriculares con los que se comparan todos los demás, el XX99 Mark I demuestra más de cinco décadas de experiencia en audio, redefiniendo la experiencia auditiva fundamental. Este par de auriculares cerrados están hechos de materiales industriales de grado aeroespacial para enfatizar la durabilidad con un peso relativamente ligero de 11 oz.',
 			second_part: 'Desde las almohadillas de microfibra hechas a mano hasta la resistente diadema de metal con elemento de amortiguación interno, los componentes trabajan juntos para brindar comodidad y un sonido inigualable. Su diseño cerrado ofrece hasta 27 dB de cancelación pasiva de ruido, lo que reduce la resonancia al reflejar el sonido en un absorbedor dedicado. Para la conectividad, se incluye un cable especialmente sintonizado con un conector dorado balanceado.'
@@ -76,6 +81,11 @@ export const products: productInterface[] = [
 			bg_mobile: '/assets/product-xx99-mark-two-headphones/mobile/image-category-page-preview.jpg',
 			bg_tablet: '/assets/product-xx99-mark-two-headphones/tablet/image-category-page-preview.jpg',
 			bg_desktop: '/assets/product-xx99-mark-two-headphones/desktop/image-category-page-preview.jpg'
+		},
+		imageDetail: {
+			bg_mobile: '/assets/product-xx99-mark-two-headphones/mobile/image-product.jpg',
+			bg_tablet: '/assets/product-xx99-mark-two-headphones/tablet/image-product.jpg',
+			bg_desktop: '/assets/product-xx99-mark-two-headphones/desktop/image-product.jpg'
 		},
 		features: {
 			first_part: 'Con una correa para la cabeza de cuero genuino y auriculares de primera calidad, estos auriculares brindan una comodidad superior para aquellos a quienes les gusta disfrutar de una escucha interminable. Incluye controles intuitivos diseñados para cualquier situación. Ya sea que esté atendiendo una llamada de negocios o simplemente en su propio espacio personal, las funciones de encendido/apagado automático y pausa aseguran que nunca perderá el ritmo.',
@@ -140,6 +150,11 @@ export const products: productInterface[] = [
 			bg_mobile: '/assets/product-xx59-headphones/mobile/image-category-page-preview.jpg',
 			bg_tablet: '/assets/product-xx59-headphones/tablet/image-category-page-preview.jpg',
 			bg_desktop: '/assets/product-xx59-headphones/desktop/image-category-page-preview.jpg'
+		},
+		imageDetail: {
+			bg_mobile: '/assets/product-xx59-headphones/mobile/image-product.jpg',
+			bg_tablet: '/assets/product-xx59-headphones/tablet/image-product.jpg',
+			bg_desktop: '/assets/product-xx59-headphones/desktop/image-product.jpg'
 		},
 		features: {
 			first_part: 'Estos auriculares se han creado con materiales duraderos y de alta calidad lo suficientemente resistentes como para llevarlos a cualquier parte. Su diseño plegable compacto fusiona comodidad y estilo minimalista haciéndolo perfecto para viajar. La transmisión impecable está asegurada por la última tecnología inalámbrica diseñada para la sincronización de audio con videos.',
@@ -206,6 +221,11 @@ export const products: productInterface[] = [
 			bg_tablet: '/assets/product-zx7-speaker/tablet/image-category-page-preview.jpg',
 			bg_desktop: '/assets/product-zx7-speaker/desktop/image-category-page-preview.jpg'
 		},
+		imageDetail: {
+			bg_mobile: '/assets/product-zx7-speaker/mobile/image-product.jpg',
+			bg_tablet: '/assets/product-zx7-speaker/tablet/image-product.jpg',
+			bg_desktop: '/assets/product-zx7-speaker/desktop/image-product.jpg'
+		},
 		features: {
 			first_part: 'Aproveche las ventajas de un cono de tweeter de diafragma plano. Esto proporciona una tasa de respuesta rápida y excelentes frecuencias altas que los altavoces de estantería de nivel inferior no pueden proporcionar. Los woofers están hechos de aluminio que produce un sonido único y claro. Las entradas XLR le permiten conectarse a un mezclador para un uso más avanzado.',
 			second_part: 'El altavoz ZX7 es la combinación perfecta de diseño elegante y alto rendimiento. Alberga una caja de madera MDF revestida que minimiza la resonancia acústica. La conectividad dual permite el emparejamiento a través de bluetooth o entrada óptica tradicional y RCA. Cambie las fuentes de entrada y controle el volumen con la punta de sus dedos con el control remoto inalámbrico incluido. Este altavoz versátil está equipado para brindar una experiencia auditiva auténtica.'
@@ -271,6 +291,11 @@ export const products: productInterface[] = [
 			bg_tablet: '/assets/product-zx9-speaker/tablet/image-category-page-preview.jpg',
 			bg_desktop: '/assets/product-zx9-speaker/desktop/image-category-page-preview.jpg'
 		},
+		imageDetail: {
+			bg_mobile: '/assets/product-zx9-speaker/mobile/image-product.jpg',
+			bg_tablet: '/assets/product-zx9-speaker/tablet/image-product.jpg',
+			bg_desktop: '/assets/product-zx9-speaker/desktop/image-product.jpg'
+		},
 		features: {
 			first_part: 'Conéctese a través de Bluetooth o casi cualquier fuente con cable. Este altavoz cuenta con entradas ópticas, coaxiales digitales, USB tipo B, RCA estéreo y XLR estéreo, lo que le permite tener hasta cinco dispositivos de fuente con cable conectados para cambiar fácilmente. La tecnología bluetooth mejorada ofrece una calidad de audio casi sin pérdidas a una distancia de hasta 328 pies (100m).',
 			second_part: 'Discover clear, more natural sounding highs than the competition with ZX9’s signature planar diaphragm tweeter. Equally important is its powerful room-shaking bass courtesy of a 6.5” aluminum alloy bass unit. You’ll be able to enjoy equal sound quality whether in a large room or small den. Furthermore, you will experience new sensations from old songs since it can respond to even the subtle waveforms.'
@@ -334,6 +359,11 @@ export const products: productInterface[] = [
 			bg_mobile: '/assets/product-yx1-earphones/mobile/image-category-page-preview.jpg',
 			bg_tablet: '/assets/product-yx1-earphones/tablet/image-category-page-preview.jpg',
 			bg_desktop: '/assets/product-yx1-earphones/desktop/image-category-page-preview.jpg'
+		},
+		imageDetail: {
+			bg_mobile: '/assets/product-yx1-earphones/mobile/image-product.jpg',
+			bg_tablet: '/assets/product-yx1-earphones/tablet/image-product.jpg',
+			bg_desktop: '/assets/product-yx1-earphones/desktop/image-product.jpg'
 		},
 		features: {
 			first_part: 'Experimente un sonido estéreo inigualable gracias a la innovadora tecnología acústica. Con una ergonomía mejorada diseñada para usarlos todo el día, estos revolucionarios auriculares han sido finamente diseñados para brindarle el ajuste perfecto, brindando total comodidad durante todo el día mientras disfrutan de un aislamiento de ruido excepcional y un sonido realmente envolvente.',
