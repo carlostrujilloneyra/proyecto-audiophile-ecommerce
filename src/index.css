@@ -62,3 +62,28 @@
 	}
 
 }
+
+.container-back-button{
+	padding: 1.6rem 2.4rem;
+	padding-bottom: .4rem;
+
+	@media (width >= 600px){
+		padding: 3.2rem 4rem 1.2rem 4rem;
+	}
+
+}
+
+.button-back{
+	background-color: transparent;
+	border: none;
+	color: #7c7c7c;
+	font-size: 1.6rem;
+	font-weight: bolder;
+	letter-spacing: .1rem;
+	outline: none;
+
+	&:hover{
+		cursor: pointer;
+	}
+
+}

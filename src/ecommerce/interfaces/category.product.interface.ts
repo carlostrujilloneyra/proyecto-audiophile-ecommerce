@@ -6,8 +6,8 @@ export interface productInterface {
 	category?: string,
 	name?: string,
 	description?: string,
-	image?: Image,
-	imageDetail?: ImageDetail,
+	image: Image,
+	imageDetail: ImageDetail,
 	features?: Feature,
 	price?: number,
 	amountInitial?: number

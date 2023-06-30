@@ -284,6 +284,7 @@ export const products: productInterface[] = [
 		category: 'speakers',
 		changeColumn: true,
 		name: 'Altavoz ZX9',
+		newProduct: true,
 		description: 'Actualice su sistema de sonido con el nuevo altavoz activo ZX9. Es un sistema de altavoces de estantería que ofrece conectividad verdaderamente inalámbrica, creando nuevas posibilidades para configuraciones de audio más agradables y prácticas.',
 		image: {
 			bg_cart: '/assets/cart/image-zx9-speaker.jpg',

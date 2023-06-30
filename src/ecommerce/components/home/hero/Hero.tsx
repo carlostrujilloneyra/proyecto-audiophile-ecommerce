@@ -29,7 +29,7 @@ export const Hero = () => {
 				style={{backgroundImage: `url(${bgImage})`}}
 				className="container"
 			>
-				<NewProduct $color="#8c8c8c">Producto nuevo</NewProduct>
+				<NewProduct $color="#8c8c8c">Nuevo producto</NewProduct>
 				<h1>{title}</h1>
 				<p>{description}</p>
 				<ButtonPrimary>Ver producto</ButtonPrimary>

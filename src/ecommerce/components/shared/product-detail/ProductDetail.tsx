@@ -12,7 +12,6 @@ export const ProductDetail = ({ product }: Props) => {
 	return (
 		<>
 			<div className='container'>
-				<button>Atrás</button>
 
 				{/* Primera parte del detalle-producto */}
 				<FirstPart product={product} />

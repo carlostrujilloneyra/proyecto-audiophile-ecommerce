@@ -27,7 +27,7 @@ export const Product = ({ product }: Props) => {
 				<div>
 					
 					{
-						newProduct && <NewProduct $color='#D87D4A'>Producto nuevo</NewProduct>
+						newProduct && <NewProduct $color='#D87D4A'>Nuevo producto</NewProduct>
 					}
 
 					<h2>{name}</h2>

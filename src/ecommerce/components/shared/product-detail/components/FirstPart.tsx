@@ -1,4 +1,7 @@
+import { useNavigate } from 'react-router-dom';
 import { productInterface } from '../../../../interfaces/category.product.interface';
+import { NewProduct, ProductDetailFP } from '../../../styles';
+import { ContainerButtons } from '../../../containers';
 
 interface Props{
 	product: productInterface
@@ -6,11 +9,47 @@ interface Props{
 
 export const FirstPart = ({ product }: Props) => {
 
-	const { newProduct, name, description, price, amountInitial, image } = product;
+	const { newProduct, name, imageDetail, description, price, amountInitial } = product;
+
+	const { bg_mobile, bg_tablet, bg_desktop } = imageDetail;
+
+	const navigate = useNavigate();
+
+	const handleReturn = () => {
+		navigate(-1);
+	}
 
 	return (
 		<>
 			
+			<div className="container-back-button">
+				<button
+					onClick={handleReturn}
+					className='button-back'
+				>
+					Atrás
+				</button>
+			</div>
+			
+			<ProductDetailFP>
+				
+				<picture>
+					<source media="(min-width: 1024px)" srcSet={bg_desktop} />
+					<source media="(min-width: 600px)" srcSet={bg_tablet} />
+					<img src={bg_mobile} alt="first-product-image" />
+				</picture>
+
+				<div className='info-product-fp'>
+					{newProduct && <NewProduct style={{marginBottom: 12, fontSize: 12}} $color="#D87D4A">Nuevo producto</NewProduct>}
+					<h2>{name}</h2>
+					<p>{description}</p>
+					<h3>${price}</h3>
+
+					<ContainerButtons />
+
+				</div>
+
+			</ProductDetailFP>
 		</>
 	)
 }
