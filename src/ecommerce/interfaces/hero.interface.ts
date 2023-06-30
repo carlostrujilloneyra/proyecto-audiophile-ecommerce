@@ -1,5 +1,6 @@
 
 export interface HeroInterface {
+	id: string,
 	subtitle: string,
 	title: string,
 	description: string,

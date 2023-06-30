@@ -2,7 +2,7 @@ import { ProductHomeInterface } from '../../interfaces/products-home.interface'
 
 export const infoProducts: ProductHomeInterface[] = [
 	{
-		id: 'zx9 altavoz',
+		id: 'zx9-speaker',
 		image: {
 			bg_mobile: '/assets/home/mobile/image-speaker-zx9.png',
 			bg_tablet: '/assets/home/tablet/image-speaker-zx9.png',
@@ -13,7 +13,7 @@ export const infoProducts: ProductHomeInterface[] = [
 	},
 
 	{
-		id: 'zx7 altavoz',
+		id: 'zx7-speaker',
 		image: {
 			bg_mobile: '/assets/home/mobile/image-speaker-zx7.jpg',
 			bg_tablet: '/assets/home/tablet/image-speaker-zx7.jpg',
@@ -23,7 +23,7 @@ export const infoProducts: ProductHomeInterface[] = [
 	},
 
 	{
-		id: 'yx1 auricular',
+		id: 'yx1-earphone',
 		image: {
 			bg_mobile: '/assets/home/mobile/image-earphones-yx1.jpg',
 			bg_tablet: '/assets/home/tablet/image-earphones-yx1.jpg',

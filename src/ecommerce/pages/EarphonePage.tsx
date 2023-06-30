@@ -1,4 +1,4 @@
-import { Product } from "../components/shared";
+import { CategoriesShared, FooterTop, Product } from "../components/shared";
 import { HeroCategory } from "../components/styles";
 import { getProductsByCategory } from "../utils";
 
@@ -21,6 +21,10 @@ export const EarphonePage = () => {
           return <Product key={product.id} product={product} />;
         })}
       </main>
+
+      <CategoriesShared />
+      <FooterTop />
+
     </>
   );
 };

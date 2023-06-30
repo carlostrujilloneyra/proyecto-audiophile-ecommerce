@@ -1,4 +1,4 @@
-import { Product } from "../components/shared";
+import { CategoriesShared, FooterTop, Product } from "../components/shared";
 import { HeroCategory } from "../components/styles";
 import { getProductsByCategory } from "../utils";
 
@@ -22,6 +22,10 @@ export const SpeakerPage = () => {
 					})
 				}
 			</main>
+
+			<CategoriesShared />
+			<FooterTop />
+
 		</>
 	)
 }

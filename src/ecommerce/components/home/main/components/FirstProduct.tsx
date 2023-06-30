@@ -1,10 +1,11 @@
+import { Link } from "react-router-dom";
 import { infoProducts } from "../../../../data/home/info-products"
 import { ButtonSecondary, FirstProductStyled } from "../../../styles"
 
 export const FirstProduct = () => {
 	
 	const firstProduct = infoProducts[0];
-	const { description, image: {bg_mobile, bg_tablet, bg_desktop}, title } = firstProduct;
+	const { id, description, image: { bg_mobile, bg_tablet, bg_desktop }, title } = firstProduct;
 
 	return (
 		<>
@@ -24,7 +25,7 @@ export const FirstProduct = () => {
 						$secondary={true}
 						$bgColor="dark"
 					>
-						Ver producto
+						<Link to={`/product/${id}`} className='go-to-product'>Ver producto</Link>
 					</ButtonSecondary>
 				</div>
 

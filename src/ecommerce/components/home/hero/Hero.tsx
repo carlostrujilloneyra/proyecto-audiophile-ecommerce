@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
 import { heroData } from "../../../data/home/hero"
 import { ButtonPrimary, HeroStyled, NewProduct } from "../../styles"
+import { Link } from "react-router-dom";
 
 export const Hero = () => {
 
-	const { subtitle, title, description, image: { bg_mobile, bg_tablet, bg_desktop } } = heroData;
+	const { id, subtitle, title, description, image: { bg_mobile, bg_tablet, bg_desktop } } = heroData;
 
 	const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
 
@@ -29,10 +30,12 @@ export const Hero = () => {
 				style={{backgroundImage: `url(${bgImage})`}}
 				className="container"
 			>
-				<NewProduct $color="#8c8c8c">Nuevo producto</NewProduct>
+				<NewProduct $color="#8c8c8c">{subtitle}</NewProduct>
 				<h1>{title}</h1>
 				<p>{description}</p>
-				<ButtonPrimary>Ver producto</ButtonPrimary>
+				<ButtonPrimary>
+					<Link to={`/product/${id}`} className='go-to-product'>Ver producto</Link>
+				</ButtonPrimary>
 			</HeroStyled>
 		</>
 	)

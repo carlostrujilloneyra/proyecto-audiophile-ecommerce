@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { infoProducts } from "../../../../data/home/info-products"
 import { ButtonSecondary } from "../../../styles";
 import { FirstContainerTP, ThirdProductStyled} from "../../../styles/containers/ThirProductStyled";
@@ -5,7 +6,7 @@ import { FirstContainerTP, ThirdProductStyled} from "../../../styles/containers/
 export const ThirdProduct = () => {
 
 	const thirProduct = infoProducts[2];
-	const { image: {bg_mobile, bg_tablet, bg_desktop}, title } = thirProduct;
+	const { id, image: {bg_mobile, bg_tablet, bg_desktop}, title } = thirProduct;
 
 	return (
 		<>
@@ -14,7 +15,9 @@ export const ThirdProduct = () => {
 				<FirstContainerTP>
 					<h3>{title}</h3>
 					<div>
-						<ButtonSecondary>Ver producto</ButtonSecondary>
+						<ButtonSecondary>
+							<Link to={`/product/${id}`} style={{color: '#000'}} className='go-to-product'>Ver producto</Link>
+						</ButtonSecondary>
 					</div>
 				</FirstContainerTP>
 

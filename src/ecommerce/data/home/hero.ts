@@ -1,6 +1,7 @@
 import { HeroInterface } from '../../interfaces/hero.interface';
 
 export const heroData: HeroInterface = {
+	id: 'xx99-mark-two',
 	subtitle: 'Nuevo producto',
 	title: 'Audífonos XX99 Mark II',
 	description: 'Experimente un audio natural y realista y una calidad de construcción excepcional hecha para los entusiastas apasionados de la música.',

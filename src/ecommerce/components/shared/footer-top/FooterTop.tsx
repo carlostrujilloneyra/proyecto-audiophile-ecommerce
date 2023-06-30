@@ -3,7 +3,7 @@ import { FooterTopSP, FooterTopStyled } from "../../styles/footer-top/FooterTopS
 
 export const FooterTop = () => {
 
-	const { image: {bg_mobile, bg_tablet, bg_desktop}, title, text } = footerTopInfo;
+	const { image: {bg_mobile, bg_tablet, bg_desktop}, text } = footerTopInfo;
 
 	return (
 		<>
