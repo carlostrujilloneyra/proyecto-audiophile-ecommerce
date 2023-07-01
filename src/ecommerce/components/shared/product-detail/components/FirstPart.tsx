@@ -9,7 +9,7 @@ interface Props{
 
 export const FirstPart = ({ product }: Props) => {
 
-	const { newProduct, name, imageDetail, description, price, amountInitial } = product;
+	const { newProduct, name, imageDetail, description, price } = product;
 
 	const { bg_mobile, bg_tablet, bg_desktop } = imageDetail;
 
@@ -40,7 +40,11 @@ export const FirstPart = ({ product }: Props) => {
 				</picture>
 
 				<div className='info-product-fp'>
-					{newProduct && <NewProduct style={{marginBottom: 12, fontSize: 12}} $color="#D87D4A">Nuevo producto</NewProduct>}
+					{ newProduct &&
+						<NewProduct
+							style={{ marginBottom: 12, fontSize: 12 }}
+							$color="#D87D4A">Nuevo producto</NewProduct>
+					}
 					<h2>{name}</h2>
 					<p>{description}</p>
 					<h3>${price}</h3>

@@ -1,13 +1,11 @@
 import { productInterface } from '../../../interfaces/category.product.interface';
-import { FirstPart, SecondPart } from './components';
+import { FirstPart, SecondPart, ThirdPart } from './components';
 
 interface Props{
 	product: productInterface
 }
 
 export const ProductDetail = ({ product }: Props) => {
-
-	// const {newProduct, name, description, price, amountInitial, features, includes} = product;
 
 	return (
 		<>
@@ -16,8 +14,11 @@ export const ProductDetail = ({ product }: Props) => {
 				{/* Primera parte del detalle-producto */}
 				<FirstPart product={product} />
 
-				{/* Segunda parte del detaller-producto */}
+				{/* Segunda parte del detalle-producto */}
 				<SecondPart product={product} />
+
+				{/* Tercera parte del detalle-producto */}
+				<ThirdPart product= {product} />
 
 			</div>
 		</>

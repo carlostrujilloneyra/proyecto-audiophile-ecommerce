@@ -15,7 +15,7 @@ export const ProductDetailSP = styled.div`
 		grid-template-columns: 1fr 36rem;
 		column-gap: 2.4rem;
 		row-gap: 0;
-		padding: 8rem;
+		padding: 6rem 8rem;
 	}
 
 	.container-info-sp{
