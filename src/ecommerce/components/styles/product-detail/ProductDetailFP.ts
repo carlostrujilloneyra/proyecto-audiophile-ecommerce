@@ -19,7 +19,7 @@ export const ProductDetailFP = styled.div`
 	}
 
 	@media (width >= 1100px){
-		padding: 6rem 8rem;
+		padding: 5rem 8rem;
 	}
 
 	picture{
@@ -77,6 +77,7 @@ export const ProductDetailFP = styled.div`
 			line-height: 1.4;
 			margin-bottom: 2.4rem;
 			opacity: .8;
+			text-align: justify;
 		}
 
 		h3{

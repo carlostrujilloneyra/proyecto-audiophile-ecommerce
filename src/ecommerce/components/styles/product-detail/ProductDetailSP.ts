@@ -2,8 +2,8 @@ import { styled } from "styled-components";
 
 export const ProductDetailSP = styled.div`
 	display: grid;
-	row-gap: 6.4rem;
-	padding: 4rem 2.4rem;
+	row-gap: 5rem;
+	padding: 2rem 2.4rem;
 
 
 	@media (width >= 600px){
@@ -36,6 +36,7 @@ export const ProductDetailSP = styled.div`
 			line-height: 1.4;
 			margin-bottom: 2.4rem;
 			opacity: .8;
+			text-align: justify;
 		}
 	}
 

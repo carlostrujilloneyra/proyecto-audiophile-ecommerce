@@ -1,4 +1,6 @@
 import { productInterface } from '../../../interfaces/category.product.interface';
+import { CategoriesShared } from '../categories';
+import { FooterTop } from '../footer-top';
 import { FirstPart, SecondPart, ThirdPart } from './components';
 
 interface Props{
@@ -18,7 +20,11 @@ export const ProductDetail = ({ product }: Props) => {
 				<SecondPart product={product} />
 
 				{/* Tercera parte del detalle-producto */}
-				<ThirdPart product= {product} />
+				<ThirdPart product={product} />
+				
+				<CategoriesShared />
+
+				<FooterTop />
 
 			</div>
 		</>
