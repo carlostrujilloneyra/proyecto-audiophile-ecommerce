@@ -5,15 +5,21 @@ export const ProductDetailFP = styled.div`
 	row-gap: 3.2rem;
 	padding: 2.4rem;
 
-	@media (width >= 600px){
+	@media (width >= 800px){
 		grid-template-columns: 28rem 1fr;
 		column-gap: 2.4rem;
 		row-gap: 0;
+		padding: 4rem 3.2rem;
 	}
 
 	@media (width >= 1024px){
 		grid-template-columns: 54rem 1fr;
 		column-gap: 3.2rem;
+		/* padding: 8rem; */
+	}
+
+	@media (width >= 1100px){
+		padding: 6rem 8rem;
 	}
 
 	picture{

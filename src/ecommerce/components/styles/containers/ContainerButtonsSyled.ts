@@ -6,4 +6,5 @@ export const ContainerButtonsStyled = styled.div`
 	grid-template-columns: 12rem 18rem;
 	column-gap: 1.6rem;
 	margin-bottom: 1.2rem;
+
 `;

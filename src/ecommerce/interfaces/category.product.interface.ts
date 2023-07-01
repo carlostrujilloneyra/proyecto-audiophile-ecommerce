@@ -11,7 +11,7 @@ export interface productInterface {
 	features?: Feature,
 	price?: number,
 	amountInitial?: number
-	includes?: includeBoxInterface[],
+	includes: includeBoxInterface[],
 	first_image_gallery?: imageGalleryInterface,
 	second_image_gallery?: imageGalleryInterface,
 	third_image_gallery?: imageGalleryInterface
