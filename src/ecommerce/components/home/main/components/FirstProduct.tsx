@@ -25,7 +25,7 @@ export const FirstProduct = () => {
 						$secondary={true}
 						$bgColor="dark"
 					>
-						<Link to={`/product/${id}`} className='go-to-product'>Ver producto</Link>
+						<Link to={`/product/${id}`} style={{color:'#fff', textDecoration: 'none'}}>Ver producto</Link>
 					</ButtonSecondary>
 				</div>
 

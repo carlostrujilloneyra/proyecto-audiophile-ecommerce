@@ -34,7 +34,7 @@ export const Hero = () => {
 				<h1>{title}</h1>
 				<p>{description}</p>
 				<ButtonPrimary>
-					<Link to={`/product/${id}`} className='go-to-product'>Ver producto</Link>
+					<Link to={`/product/${id}`} style={{color:'#fff', textDecoration: 'none'}}>Ver producto</Link>
 				</ButtonPrimary>
 			</HeroStyled>
 		</>
