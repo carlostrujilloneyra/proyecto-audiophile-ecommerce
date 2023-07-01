@@ -42,5 +42,10 @@ export const ButtonSecondary = styled(ButtonPrimary)<Props>`
 		transition: all .4s;
 	}
 
+	&:hover a{
+		color: #fff;
+		transition: all .4s;
+	}
+
 `;
 

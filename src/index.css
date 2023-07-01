@@ -14,8 +14,14 @@
 
 .go-to-product{
 	display: block;
-	color: white;
+	color: #000;
 	text-decoration: none;
+
+	&:hover{
+		color: #fff;
+		transition: .4s;
+	}
+
 }
 
 /* Estilos condicionados */

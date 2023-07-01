@@ -31,7 +31,7 @@ export const SecondProduct = () => {
 				<div>
 					<h3>{title}</h3>
 					<ButtonSecondary>
-						<Link to={`/product/${id}`} style={{color: '#000'}} className='go-to-product'>Ver producto</Link>
+						<Link to={`/product/${id}`} className='go-to-product'>Ver producto</Link>
 					</ButtonSecondary>
 				</div>
 			</SecondProductStyled>
