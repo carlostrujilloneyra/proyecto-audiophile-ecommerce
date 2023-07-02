@@ -96,7 +96,7 @@ export const FooterContainer = styled.footer`
 			color: #fff;
 			opacity: .5;
 			text-align: center;
-			line-height: 1.5;
+			line-height: 1.6;
 
 			@media (width >= 600px){
 				text-align: justify;

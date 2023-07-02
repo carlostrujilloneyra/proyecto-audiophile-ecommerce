@@ -49,7 +49,7 @@ export const HeroStyled = styled.div`
 		text-align: center;
 
 		@media (width >= 1024px){
-			text-align: start;
+			text-align: justify;
 			width: 35%;
 		}
 

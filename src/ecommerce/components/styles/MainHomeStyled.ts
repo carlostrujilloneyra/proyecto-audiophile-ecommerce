@@ -2,9 +2,10 @@ import { styled } from "styled-components";
 
 export const MainHomeStyled = styled.main`
 	display: grid;
-	grid-template-rows: 55rem 32rem 46rem;
+	grid-template-rows: 55rem 32rem 43rem;
 	row-gap: 2.4rem;
 	padding: 6rem 2.4rem;
+	padding-bottom: 3.2rem;
 	margin-bottom: 3.2rem;
 
 	@media (width >= 600px){

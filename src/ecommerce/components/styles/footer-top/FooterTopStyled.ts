@@ -81,8 +81,8 @@ export const FooterTopSP = styled.div`
 		opacity: .8;
 
 		@media (width >= 1024px){
-		text-align: start;
-		align-items: flex-start;
+			text-align: justify;
+			align-items: flex-start;
 	}
 
 	}

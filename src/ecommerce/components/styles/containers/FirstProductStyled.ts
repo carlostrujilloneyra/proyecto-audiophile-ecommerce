@@ -81,7 +81,7 @@ export const FirstProductStyled = styled.section`
 		}
 
 		@media (width >= 1024px){
-			text-align: start;
+			text-align: justify;
 			width: 80%;
 		}
 
