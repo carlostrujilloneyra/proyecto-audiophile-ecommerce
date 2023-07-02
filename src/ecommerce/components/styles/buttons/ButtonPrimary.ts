@@ -1,6 +1,10 @@
 import { styled } from "styled-components";
 
-export const ButtonPrimary = styled.button`
+interface Props{
+	$padding: string
+}
+
+export const ButtonPrimary = styled.button<Props>`
 	background-color: #D87D4A;
 	border: none;
 	outline: none;
@@ -8,9 +12,14 @@ export const ButtonPrimary = styled.button`
 	font-weight: bolder;
 	letter-spacing: .1rem;
 	margin-top: 2.8rem;
-	padding: 1.5rem 3.2rem;
+	padding: ${({$padding}) => $padding};
 	text-transform: uppercase;
 	transition: all .4s;
+
+	a{
+		display: block;
+		padding: 1.5rem 3.2rem;
+	}
 
 	&:hover{
 		background-color: #fbaf85;

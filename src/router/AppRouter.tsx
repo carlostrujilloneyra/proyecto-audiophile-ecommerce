@@ -2,11 +2,14 @@ import { Route, Routes } from "react-router-dom"
 import { Footer, Header } from "../ecommerce/components/shared"
 import { routes } from "./routes"
 import { HomePage, NotFoundPage, ProductPage } from "../ecommerce/pages"
+import { ScrollTop } from "../ecommerce/components/shared/ScrollTop"
 
 export const AppRouter = () => {
 	return (
-		<>
+		<>	
 			
+			<ScrollTop />
+
 			<Header />
 
 			<Routes>
@@ -26,9 +29,8 @@ export const AppRouter = () => {
 				{/* Ruta que no existe */}
 				<Route path='*' element={<NotFoundPage />} />
 
-			</Routes>
-
-			<Footer />
+				</Routes>
+				<Footer />
 
 		</>
 	)

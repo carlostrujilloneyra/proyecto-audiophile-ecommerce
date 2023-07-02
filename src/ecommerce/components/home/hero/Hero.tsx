@@ -33,7 +33,7 @@ export const Hero = () => {
 				<NewProduct $color="#8c8c8c">{subtitle}</NewProduct>
 				<h1>{title}</h1>
 				<p>{description}</p>
-				<ButtonPrimary>
+				<ButtonPrimary $padding="0">
 					<Link to={`/product/${id}`} style={{color:'#fff', textDecoration: 'none'}}>Ver producto</Link>
 				</ButtonPrimary>
 			</HeroStyled>

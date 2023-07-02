@@ -17,6 +17,7 @@ export const ContainerButtons = () => {
 				</div>
 
 				<ButtonPrimary
+					$padding="1.5rem 3.2rem"
 					style={{ marginTop: 0 }}
 				>
 					Agregar al carrito

@@ -22,7 +22,12 @@ export const CategoryShared = ({ category }: Props) => {
 		<>
 			<CategorySharedCard>
 				<div className='container-category-shared'>
-					<img src={image} alt={name} className='image-category-shared' />
+					<img
+						src={image}
+						alt={name}
+						onClick={() => showInfo(id)}
+						style={{cursor:'pointer'}}
+						className='image-category-shared' />
 					<h4>{name}</h4>
 					<SimpleButon
 						onClick={() => showInfo(id)}

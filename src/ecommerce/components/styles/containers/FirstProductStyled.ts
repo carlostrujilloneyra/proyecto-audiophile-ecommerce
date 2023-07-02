@@ -8,6 +8,18 @@ export const FirstProductStyled = styled.section`
 	row-gap: 3.2rem;
 	padding: 5rem 2.4rem;
 	
+	.container-first-product{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		
+		@media (width >= 1024px){
+			align-items: flex-start;
+			justify-content: flex-start;
+	}
+
+}
 
 	@media (width >= 600px){
 		padding: 6.4rem 4.8rem;
