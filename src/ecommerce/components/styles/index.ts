@@ -1,4 +1,5 @@
 export * from './GlobalStyles';
+export * from './header';
 export * from './buttons';
 export * from './containers';
 export * from './typography';

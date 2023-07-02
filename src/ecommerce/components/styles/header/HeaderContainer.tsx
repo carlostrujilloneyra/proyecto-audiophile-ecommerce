@@ -45,6 +45,10 @@ export const List = styled.ul`
 	justify-content: center;
 	transition: all .4s;
 
+	@media (width >= 600px){
+		flex-direction: row;
+	}
+
 	@media (width >= 1024px){
 		flex-direction: row;
 
@@ -82,7 +86,6 @@ export const List = styled.ul`
 	}
 
 	&:hover::before{
-		/* text-decoration: underline; */
 		width: 100%;
 		left: 0;
 		opacity: 1;

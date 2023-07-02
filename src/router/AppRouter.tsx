@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom"
-import { Header } from "../ecommerce/components/shared"
+import { Footer, Header } from "../ecommerce/components/shared"
 import { routes } from "./routes"
 import { HomePage, NotFoundPage, ProductPage } from "../ecommerce/pages"
 
@@ -27,6 +27,9 @@ export const AppRouter = () => {
 				<Route path='*' element={<NotFoundPage />} />
 
 			</Routes>
+
+			<Footer />
+
 		</>
 	)
 }

@@ -1,6 +1,7 @@
 
 /* Algunos estilos para evitar crear tantos styled-components */
 .image-logo-header{
+	cursor: pointer;
 	transition: all .4s;
 
 	@media (width >= 1024px){
