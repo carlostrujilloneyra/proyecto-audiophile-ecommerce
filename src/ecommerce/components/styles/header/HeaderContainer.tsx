@@ -11,6 +11,7 @@ export const HeaderContainer = styled.header`
 	justify-content: center;
 	justify-items: center;
 	padding: 3.2rem 2.4rem;
+	position: relative;
 
 	img{
 		cursor: pointer;
