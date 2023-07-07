@@ -1,16 +1,16 @@
 
 export interface productInterface {
-	id?: string,
+	id: string,
 	newProduct?: boolean,
 	changeColumn?: boolean,
 	category?: string,
-	name?: string,
+	name: string,
 	description?: string,
 	image: Image,
 	imageDetail: ImageDetail,
 	features?: Feature,
-	price?: number,
-	amountInitial?: number
+	price: number,
+	amountInitial: number
 	includes: includeBoxInterface[],
 	first_image_gallery?: imageGalleryInterface,
 	second_image_gallery?: imageGalleryInterface,

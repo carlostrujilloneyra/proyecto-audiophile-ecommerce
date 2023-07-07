@@ -1,6 +1,5 @@
 import { CartStyled } from "../styles"
 import { AiOutlineClose } from 'react-icons/ai'
-import { Dispatch } from "react"
 
 interface Props{
 	showCart: boolean,
@@ -17,10 +16,10 @@ export const CartContainer = ({ showCart, setShowCart }: Props) => {
 		<>
 			<CartStyled>
 
-				{/* Aquí mostraré los productos del carrito de compras */}
+				{/* Header del carrito de compras */}
 
 				<div className="header-cart-container">
-					<h2>Carrito</h2>
+					<h2>Carrito()</h2>
 					<button>Remover todo</button>
 
 					<AiOutlineClose
@@ -30,6 +29,11 @@ export const CartContainer = ({ showCart, setShowCart }: Props) => {
 						onClick={handleCloseCart}
 					/>
 				</div>
+
+				{/* Cuerpo del encabezado */}
+
+
+				{/* Footer del carrito de compras */}
 
 			</CartStyled>
 		</>

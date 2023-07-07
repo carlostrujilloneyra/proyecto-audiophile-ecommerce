@@ -4,7 +4,7 @@ export const ContainerButtonsStyled = styled.div`
 	display: grid;
 	align-items: center;
 	grid-template-columns: 12.2rem 18rem;
-	column-gap: 1.6rem;
+	column-gap: 2rem;
 	margin-bottom: 1.2rem;
 
 	.container-buttons-amount{
