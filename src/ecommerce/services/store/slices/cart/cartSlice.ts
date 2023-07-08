@@ -11,13 +11,15 @@ interface CartAddState{
 interface initialStateInterface {
 	products: CartAddState [],
 	error: boolean,
-	priceTotal: number
+	priceTotal: number,
+	quantityTotal: number
 }
 
 const initialState: initialStateInterface = {
 	products: [],
 	error: false,
-	priceTotal: 0
+	priceTotal: 0,
+	quantityTotal: 0
 };
 
 export const cartSlice = createSlice({
@@ -30,20 +32,26 @@ export const cartSlice = createSlice({
 				state.products.map(product => {
 					if (product.id === action.payload.id) {
 						product.quantity += action.payload.quantity;
-						product.price+= action.payload.quantity*action.payload.price
+						product.price += action.payload.quantity * action.payload.price;
+						state.quantityTotal += action.payload.quantity;
+						state.priceTotal += action.payload.quantity * action.payload.price;
 					}
 
 				})
 			} else {
 				state.products = [...state.products, action.payload]
+				state.quantityTotal += action.payload.quantity;
+				state.priceTotal += action.payload.quantity * action.payload.price;
 			}
 		},
 
 		// Borrar todo
 		removeToCart(state) {
-			state.products = []
+			state.products = [];
+			state.quantityTotal = 0;
+			state.priceTotal = 0;
 		}
 	}
 });
 
-export const { addToCart } = cartSlice.actions;
+export const { addToCart, removeToCart } = cartSlice.actions;

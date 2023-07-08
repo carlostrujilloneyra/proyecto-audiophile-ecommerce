@@ -4,8 +4,12 @@ export const ContainerButtonsStyled = styled.div`
 	display: grid;
 	align-items: center;
 	grid-template-columns: 12.2rem 18rem;
-	column-gap: 2rem;
+	column-gap: 1rem;
 	margin-bottom: 1.2rem;
+
+	@media (width >= 600px){
+		column-gap: 2rem;
+	}
 
 	.container-buttons-amount{
 		display: flex;

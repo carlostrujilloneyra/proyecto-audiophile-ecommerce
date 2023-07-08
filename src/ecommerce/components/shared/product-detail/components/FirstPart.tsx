@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import { productInterface } from '../../../../interfaces/category.product.interface';
-import { NewProduct, ProductDetailFP } from '../../../styles';
+import { ContainerBackButton, NewProduct, ProductDetailFP } from '../../../styles';
 import { ContainerButtons } from '../../../containers';
 
 interface Props{
@@ -22,14 +22,14 @@ export const FirstPart = ({ product }: Props) => {
 	return (
 		<>
 			
-			<div className="container-back-button">
+			<ContainerBackButton className='container'>
 				<button
 					onClick={handleReturn}
 					className='button-back'
 				>
 					Atrás
 				</button>
-			</div>
+			</ContainerBackButton>
 			
 			<ProductDetailFP>
 				

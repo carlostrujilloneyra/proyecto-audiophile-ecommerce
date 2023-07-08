@@ -1,15 +1,23 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { CartContainer } from "../../cart/CartContainer"
 import { HeaderContainer } from "../../styles/header"
 import { Logo, Nav } from "./components"
+import { useLocation } from "react-router-dom"
 
 export const Header = () => {
 
 	const [showCart, setShowCart] = useState<boolean>(false);
 
+	const location = useLocation();
+
 	const handleShowCart = () => {
 		setShowCart(!showCart);
 	}
+
+	useEffect(() => {
+		setShowCart(false);
+	}, [location])
+	
 
 	return (
 		<>

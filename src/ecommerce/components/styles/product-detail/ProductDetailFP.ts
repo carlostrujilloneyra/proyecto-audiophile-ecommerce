@@ -28,8 +28,8 @@ export const ProductDetailFP = styled.div`
 		align-items: center;
 
 		img{
-			width: 32.7rem;
-			height: 32.7rem;
+			width: 28rem;
+			height: 29rem;
 			border-radius: .8rem;
 			
 			@media (width >= 600px){

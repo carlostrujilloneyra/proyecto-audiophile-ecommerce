@@ -3,7 +3,7 @@ import { styled } from "styled-components";
 export const ProductDetailTP = styled.div`
 	display: grid;
 	row-gap: 2.4rem;
-	padding: 4rem 2.4rem;
+	padding: 4rem 2rem;
 
 	@media (width >= 600px){
 		grid-template-columns: 28rem 40rem;
@@ -33,7 +33,7 @@ export const ProductDetailTP = styled.div`
 
 		img{
 			border-radius: .8rem;
-			width: 32.7rem;
+			width: 30.7rem;
 			height: 17.4rem;
 			transition: all .4s;
 
@@ -61,8 +61,8 @@ export const ProductDetailTP = styled.div`
 
 		img{
 			border-radius: .8rem;
-			width: 32.7rem;
-			height: 36.8rem;
+			width: 30.7rem;
+			height: 34.8rem;
 			transition: all .4s;
 
 			@media (width >= 600px){

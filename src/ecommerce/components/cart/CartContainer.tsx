@@ -1,3 +1,5 @@
+import { useAppDispatch, useAppSelector } from "../../services/store/hooks"
+import { removeToCart } from "../../services/store/slices/cart"
 import { CartStyled } from "../styles"
 import { AiOutlineClose } from 'react-icons/ai'
 
@@ -8,8 +10,16 @@ interface Props{
 
 export const CartContainer = ({ showCart, setShowCart }: Props) => {
 
+	const dispatch = useAppDispatch();
+
+	const { products, priceTotal, quantityTotal } = useAppSelector(state => state.cart);
+
 	const handleCloseCart = () => {
 		setShowCart(!showCart);
+	}
+
+	const handleRemoveAllProducts = () => {
+		dispatch(removeToCart());
 	}
 
 	return (
@@ -19,8 +29,8 @@ export const CartContainer = ({ showCart, setShowCart }: Props) => {
 				{/* Header del carrito de compras */}
 
 				<div className="header-cart-container">
-					<h2>Carrito()</h2>
-					<button>Remover todo</button>
+					<h2>Carrito({quantityTotal})</h2>
+					<button onClick={handleRemoveAllProducts}>Remover todo</button>
 
 					<AiOutlineClose
 						style={{cursor:'pointer'}}
