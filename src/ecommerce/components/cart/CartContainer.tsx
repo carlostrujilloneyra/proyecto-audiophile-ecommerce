@@ -1,7 +1,8 @@
 import { useAppDispatch, useAppSelector } from "../../services/store/hooks"
 import { removeToCart } from "../../services/store/slices/cart"
-import { CartStyled } from "../styles"
-import { AiOutlineClose } from 'react-icons/ai'
+import { ButtonPrimary, CartStyled } from "../styles"
+import { AiOutlineClose, AiOutlineShoppingCart } from 'react-icons/ai'
+import { ProductAdd } from "./components"
 
 interface Props{
 	showCart: boolean,
@@ -40,10 +41,44 @@ export const CartContainer = ({ showCart, setShowCart }: Props) => {
 					/>
 				</div>
 
-				{/* Cuerpo del encabezado */}
+				{/* Cuerpo del carrito de compras */}
+				{
+					products.length === 0
+						?
+						(
+							<div className="grid-no-products">
+								<AiOutlineShoppingCart size='2.5rem' />
+								<p>No hay productos agregados</p>
+							</div>
+						)
+						:
+						products.map(product => {
+							return <ProductAdd key={product.id} product={product} />
+						})
+				}
 
 
 				{/* Footer del carrito de compras */}
+				{
+					products.length > 0 && (
+						<div className="footer-cart-container">
+							<div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+								<p>Total</p>
+								<h3>${priceTotal}</h3>
+							</div>
+
+							<div className="container-cart-button-footer">
+								<ButtonPrimary
+									style={{width:'100%', marginTop: 20}}
+									$padding="1.5rem 3.2rem"
+								>
+									Ir a pagar
+								</ButtonPrimary>
+							</div>
+
+						</div>
+					)
+				}
 
 			</CartStyled>
 		</>
