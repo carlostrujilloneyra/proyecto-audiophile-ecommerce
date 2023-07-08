@@ -1,7 +1,7 @@
 import { styled } from "styled-components";
 
 interface Props{
-	$padding: string
+	$padding?: string
 }
 
 export const ButtonPrimary = styled.button<Props>`

@@ -118,11 +118,13 @@ export const FooterContainer = styled.footer`
 			grid-template-columns: 1fr 12rem;
 			column-gap: 2.4rem;
 			align-items: center;
+			margin-left: 1.2rem;
 		}
 
 		@media (width >= 1024px){
 			grid-template-columns: 1fr 20rem;
 			margin-top: 2.4rem;
+			margin-left: 0;
 		}
 
 	}
@@ -130,13 +132,23 @@ export const FooterContainer = styled.footer`
 	.developed-by{
 		margin-top: 1.6rem;
 
+		@media (width >= 600px){
+			margin-top: 2.8rem;
+		}
+
 		p{
 			text-align: center;
 			font-weight: bolder;
-		}
+			
+			@media (width >= 600px){
+				text-align: start;
+				margin-left: 1.2rem;
+			}
+			
+			@media (width >= 1024px){
+				margin-left: 0;
+			}
 
-		@media (width >= 600px){
-			text-align: start;
 		}
 
 	}
