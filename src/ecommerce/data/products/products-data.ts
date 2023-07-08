@@ -26,7 +26,7 @@ export const products: productInterface[] = [
 			first_part: 'Al igual que los auriculares con los que se comparan todos los demás, el XX99 Mark I demuestra más de cinco décadas de experiencia en audio, redefiniendo la experiencia auditiva fundamental. Este par de auriculares cerrados están hechos de materiales industriales de grado aeroespacial para enfatizar la durabilidad con un peso relativamente ligero de 11 oz.',
 			second_part: 'Desde las almohadillas de microfibra hechas a mano hasta la resistente diadema de metal con elemento de amortiguación interno, los componentes trabajan juntos para brindar comodidad y un sonido inigualable. Su diseño cerrado ofrece hasta 27 dB de cancelación pasiva de ruido, lo que reduce la resonancia al reflejar el sonido en un absorbedor dedicado. Para la conectividad, se incluye un cable especialmente sintonizado con un conector dorado balanceado.'
 		},
-		price: 1750,
+		price: 1250,
 		amountInitial: 1,
 		includes: [
 			{
@@ -91,7 +91,7 @@ export const products: productInterface[] = [
 			first_part: 'Con una correa para la cabeza de cuero genuino y auriculares de primera calidad, estos auriculares brindan una comodidad superior para aquellos a quienes les gusta disfrutar de una escucha interminable. Incluye controles intuitivos diseñados para cualquier situación. Ya sea que esté atendiendo una llamada de negocios o simplemente en su propio espacio personal, las funciones de encendido/apagado automático y pausa aseguran que nunca perderá el ritmo.',
 			second_part: 'La cancelación activa de ruido avanzada con ecualizador incorporado le permite experimentar su mundo de audio en sus términos. Le permite disfrutar de su audio en paz, pero interactuar rápidamente con su entorno cuando lo necesite. Combinados con conectividad compatible con Bluetooth 5.0 y una duración de la batería de 17 horas, los auriculares XX99 Mark II le brindan un sonido superior, tecnología de punta y una estética de diseño moderno.'
 		},
-		price: 2999,
+		price: 1599,
 		amountInitial: 1,
 		includes: [
 			{
@@ -160,7 +160,7 @@ export const products: productInterface[] = [
 			first_part: 'Estos auriculares se han creado con materiales duraderos y de alta calidad lo suficientemente resistentes como para llevarlos a cualquier parte. Su diseño plegable compacto fusiona comodidad y estilo minimalista haciéndolo perfecto para viajar. La transmisión impecable está asegurada por la última tecnología inalámbrica diseñada para la sincronización de audio con videos.',
 			second_part: 'Más que un simple par de auriculares, este auricular cuenta con un par de micrófonos integrados para llamadas claras y manos libres cuando se combina con un teléfono inteligente compatible. Controlar la música y las llamadas también es intuitivo gracias a los botones táctiles de fácil acceso en los auriculares. Independientemente de cómo use los auriculares XX59, puede hacerlo todo el día gracias a una impresionante duración de la batería de 30 horas que se puede recargar rápidamente a través de USB-C.'
 		},
-		price: 899,
+		price: 599,
 		amountInitial: 1,
 		includes: [
 			{
@@ -230,7 +230,7 @@ export const products: productInterface[] = [
 			first_part: 'Aproveche las ventajas de un cono de tweeter de diafragma plano. Esto proporciona una tasa de respuesta rápida y excelentes frecuencias altas que los altavoces de estantería de nivel inferior no pueden proporcionar. Los woofers están hechos de aluminio que produce un sonido único y claro. Las entradas XLR le permiten conectarse a un mezclador para un uso más avanzado.',
 			second_part: 'El altavoz ZX7 es la combinación perfecta de diseño elegante y alto rendimiento. Alberga una caja de madera MDF revestida que minimiza la resonancia acústica. La conectividad dual permite el emparejamiento a través de bluetooth o entrada óptica tradicional y RCA. Cambie las fuentes de entrada y controle el volumen con la punta de sus dedos con el control remoto inalámbrico incluido. Este altavoz versátil está equipado para brindar una experiencia auditiva auténtica.'
 		},
-		price: 3500,
+		price: 2500,
 		amountInitial: 1,
 		includes: [
 			{
@@ -301,7 +301,7 @@ export const products: productInterface[] = [
 			first_part: 'Conéctese a través de Bluetooth o casi cualquier fuente con cable. Este altavoz cuenta con entradas ópticas, coaxiales digitales, USB tipo B, RCA estéreo y XLR estéreo, lo que le permite tener hasta cinco dispositivos de fuente con cable conectados para cambiar fácilmente. La tecnología bluetooth mejorada ofrece una calidad de audio casi sin pérdidas a una distancia de hasta 328 pies (100m).',
 			second_part: 'Discover clear, more natural sounding highs than the competition with ZX9’s signature planar diaphragm tweeter. Equally important is its powerful room-shaking bass courtesy of a 6.5” aluminum alloy bass unit. You’ll be able to enjoy equal sound quality whether in a large room or small den. Furthermore, you will experience new sensations from old songs since it can respond to even the subtle waveforms.'
 		},
-		price: 4500,
+		price: 2500,
 		amountInitial: 1,
 		includes: [
 			{
@@ -370,7 +370,7 @@ export const products: productInterface[] = [
 			first_part: 'Experimente un sonido estéreo inigualable gracias a la innovadora tecnología acústica. Con una ergonomía mejorada diseñada para usarlos todo el día, estos revolucionarios auriculares han sido finamente diseñados para brindarle el ajuste perfecto, brindando total comodidad durante todo el día mientras disfrutan de un aislamiento de ruido excepcional y un sonido realmente envolvente.',
 			second_part: 'Los auriculares inalámbricos YX1 cuentan con controles personalizables para volumen, música, llamadas y asistentes de voz integrados en ambos auriculares. La nueva duración de la batería de 7 horas se puede extender hasta 28 horas con el estuche de carga, lo que le brinda tiempo de juego ininterrumpido. Exquisita artesanía con un diseño resistente a salpicaduras ahora disponible en un nuevo esquema de color blanco y gris, así como en el popular negro clásico.'
 		},
-		price: 599,
+		price: 499,
 		amountInitial: 1,
 		includes: [
 			{

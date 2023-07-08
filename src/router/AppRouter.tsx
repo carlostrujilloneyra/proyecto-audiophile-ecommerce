@@ -26,6 +26,8 @@ export const AppRouter = () => {
 				
 				<Route path='product/:productId' element={<ProductPage />} />
 
+				{/* TODO: Crear una página para el checkout */}
+
 				{/* Ruta que no existe */}
 				<Route path='*' element={<NotFoundPage />} />
 

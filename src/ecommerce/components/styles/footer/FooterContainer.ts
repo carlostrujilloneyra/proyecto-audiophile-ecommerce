@@ -127,6 +127,20 @@ export const FooterContainer = styled.footer`
 
 	}
 
+	.developed-by{
+		margin-top: 1.6rem;
+
+		p{
+			text-align: center;
+			font-weight: bolder;
+		}
+
+		@media (width >= 600px){
+			text-align: start;
+		}
+
+	}
+
 `;
 
 export const SocialNetworksFooter = styled.div`
