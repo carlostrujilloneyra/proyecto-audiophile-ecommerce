@@ -11,6 +11,11 @@ export const ContainerButtonsStyled = styled.div`
 		column-gap: 2rem;
 	}
 
+	.alert{
+		font-family: 'Manrope', sans-serif;
+		font-size: 1.4rem;
+	}
+
 	.container-buttons-amount{
 		display: flex;
 		

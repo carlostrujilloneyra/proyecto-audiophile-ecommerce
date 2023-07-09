@@ -119,7 +119,11 @@ export const QuantityProductsStyled = styled.div`
 	height: 2.5rem;
 	position: absolute;
 	content: '';
-	transform: translate(90%, -140%);
+	transform: translate(70%, -140%);
+
+	@media (width >= 600px){
+		transform: translate(90%, -140%);
+	}
 
 	h3{
 		color: #fff;

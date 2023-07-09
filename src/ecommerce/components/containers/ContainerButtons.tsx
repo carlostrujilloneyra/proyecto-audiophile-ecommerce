@@ -5,6 +5,7 @@ import { productInterface } from '../../interfaces/category.product.interface'
 import { addToCart } from "../../services/store/slices/cart"
 import { useAppDispatch, useAppSelector } from "../../services/store/hooks"
 import { setItem } from "../../utils"
+import { Toaster, toast } from "react-hot-toast"
 
 interface Props{
 	product: productInterface
@@ -15,6 +16,8 @@ export const ContainerButtons = ({ product }: Props) => {
 	const { id, image:{bg_cart: image}, name, price } = product;
 
 	const [amount, setAmount] = useState<number>(1);
+
+	// const notify = () => toast('Aquí está tu notificación')
 
 	const dispatch = useAppDispatch();
 
@@ -29,6 +32,19 @@ export const ContainerButtons = ({ product }: Props) => {
 	}
 
 	const handleAddProductToCart = () => {
+
+		toast.success('Producto agregado!', {
+			style: {
+				color: '#7d7d7d',
+				padding: 12
+			},
+			iconTheme: {
+				primary: '#D87D4A',
+				secondary: '#fff'
+			},
+			duration: 5000
+		})
+
 		dispatch(addToCart({
 			id,
 			image,
@@ -45,6 +61,8 @@ export const ContainerButtons = ({ product }: Props) => {
 	return (
 		<>
 			<ContainerButtonsStyled>
+
+				<Toaster  containerClassName="alert"/>
 
 				<div className="container-buttons-amount">
 					<button onClick={handleDecrementProduct}>-</button>
