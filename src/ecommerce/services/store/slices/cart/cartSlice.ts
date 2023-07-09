@@ -1,4 +1,5 @@
 import { PayloadAction, createSlice } from "@reduxjs/toolkit";
+import { getItem } from "../../../../utils";
 
 export interface CartAddState{
 	id: string,
@@ -19,7 +20,8 @@ interface initialStateInterface {
 	quantityTotal: number
 }
 
-const initialState: initialStateInterface = {
+// Recuerda que initialState es igual a "state"
+const initialState: initialStateInterface = getItem('cart') || {
 	products: [],
 	error: false,
 	priceTotal: 0,

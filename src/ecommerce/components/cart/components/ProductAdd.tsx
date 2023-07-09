@@ -1,7 +1,8 @@
-import { useState } from 'react';
-import { useAppDispatch } from '../../../services/store/hooks';
+import { useEffect, useState } from 'react';
+import { useAppDispatch, useAppSelector } from '../../../services/store/hooks';
 import {CartAddState, addToCart, removeProduct} from '../../../services/store/slices/cart/cartSlice'
 import { ProductCartStyled } from '../../styles';
+import { setItem } from '../../../utils';
 
 interface Props{
 	product: CartAddState;
@@ -10,6 +11,8 @@ interface Props{
 export const ProductAdd = ({ product }: Props) => {
 	
 	const [amount, setAmount] = useState<number>(1);
+
+	const data = useAppSelector((state) => state.cart);
 
 	const { id, image, price, name } = product;
 
@@ -26,6 +29,12 @@ export const ProductAdd = ({ product }: Props) => {
 
 		setAmount(amount + 1);
 	}
+
+	useEffect(() => {
+		// Aquí añades el producto al array de productos
+		setItem('cart', data);
+	}, [handleIncrementProduct])
+	
 
 	const handleDecrementProduct = () => {
 		dispatch(removeProduct({

@@ -1,9 +1,10 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { ButtonPrimary } from "../styles"
 import { ContainerButtonsStyled } from "../styles/containers/ContainerButtonsSyled"
 import { productInterface } from '../../interfaces/category.product.interface'
 import { addToCart } from "../../services/store/slices/cart"
-import { useAppDispatch } from "../../services/store/hooks"
+import { useAppDispatch, useAppSelector } from "../../services/store/hooks"
+import { setItem } from "../../utils"
 
 interface Props{
 	product: productInterface
@@ -16,6 +17,8 @@ export const ContainerButtons = ({ product }: Props) => {
 	const [amount, setAmount] = useState<number>(1);
 
 	const dispatch = useAppDispatch();
+
+	const data = useAppSelector((state) => state.cart);
 
 	const handleIncrementProduct = () => {
 		setAmount((a) => a + 1);
@@ -35,6 +38,10 @@ export const ContainerButtons = ({ product }: Props) => {
 		}));
 	}
 
+	useEffect(() => {
+		setItem('cart', data);
+	}, [handleAddProductToCart]);
+	
 	return (
 		<>
 			<ContainerButtonsStyled>
