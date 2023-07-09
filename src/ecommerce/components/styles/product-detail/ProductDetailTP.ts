@@ -14,11 +14,11 @@ export const ProductDetailTP = styled.div`
 
 	@media (width >= 1024px){
 		grid-template-columns: minmax(36rem, 45rem) minmax(58rem, 63.5rem);
-		column-gap: 3.2rem;
 		padding: 4rem 3.2rem;
 	}
 
 	@media (width >= 1100px){
+		column-gap: 3.2rem;
 		padding: 4rem 8rem;
 	}
 
@@ -61,7 +61,7 @@ export const ProductDetailTP = styled.div`
 
 		img{
 			border-radius: .8rem;
-			width: 32.7rem;
+			width: 31.7rem;
 			height: 35.8rem;
 			transition: all .4s;
 

@@ -15,6 +15,10 @@ export const FooterTopStyled = styled.article`
 		grid-template-rows: repeat(1, 59rem);
 		column-gap: 4.8rem;
 		row-gap: 0;
+		padding: 6rem 3.2rem;
+	}
+
+	@media (width >= 1100px){
 		padding: 8rem;
 	}
 
@@ -38,7 +42,7 @@ export const FooterTopSP = styled.div`
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	padding: 5rem 2.4rem;
+	padding: 3rem 2.4rem;
 	
 	@media (width >= 600px){
 		padding: 2rem 4.8rem;

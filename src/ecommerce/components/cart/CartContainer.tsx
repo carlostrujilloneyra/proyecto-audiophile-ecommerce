@@ -64,7 +64,7 @@ export const CartContainer = ({ showCart, setShowCart }: Props) => {
 						<div className="footer-cart-container">
 							<div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
 								<p>Total</p>
-								<h3>${priceTotal}</h3>
+								<h3>s/{priceTotal}</h3>
 							</div>
 
 							<div className="container-cart-button-footer">

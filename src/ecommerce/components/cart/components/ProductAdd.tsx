@@ -51,7 +51,7 @@ export const ProductAdd = ({ product }: Props) => {
 
 				<div className='container-info-product'>
 					<h3>{id}</h3>
-					<p>${price}</p>
+					<p>s/{price}</p>
 				</div>
 
 				<div className="container-buttons-product">

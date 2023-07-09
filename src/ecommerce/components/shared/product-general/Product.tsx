@@ -9,10 +9,6 @@ interface Props{
 export const Product = ({ product }: Props) => {
 	
 	const { id, changeColumn, newProduct, image: { bg_mobile, bg_tablet, bg_desktop }, name, description } = product;
-	
-	// const showInfo = (id: string | undefined) => {
-	// 	console.log(id)
-	// }
 
 	return (
 		<>

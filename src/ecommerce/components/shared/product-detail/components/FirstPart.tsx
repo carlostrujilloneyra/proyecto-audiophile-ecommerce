@@ -47,7 +47,7 @@ export const FirstPart = ({ product }: Props) => {
 					}
 					<h2>{name}</h2>
 					<p>{description}</p>
-					<h3>${price}</h3>
+					<h3>s/{price}</h3>
 
 					<ContainerButtons product={product}/>
 

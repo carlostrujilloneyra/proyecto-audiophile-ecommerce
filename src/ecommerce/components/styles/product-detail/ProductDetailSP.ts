@@ -13,7 +13,7 @@ export const ProductDetailSP = styled.div`
 
 	@media (width >= 1024px){
 		grid-template-columns: 1fr 36rem;
-		column-gap: 2.4rem;
+		column-gap: 3.2rem;
 		row-gap: 0;
 		padding: 6rem 8rem;
 	}
@@ -45,10 +45,12 @@ export const ProductDetailSP = styled.div`
 	}
 
 	@media (width >= 1024px){
-		padding: 8rem;
+		padding: 5rem 3.2rem;
 	}
 
 
-
+	@media (width >= 1100px){
+		padding: 8rem;
+	}
 
 `;

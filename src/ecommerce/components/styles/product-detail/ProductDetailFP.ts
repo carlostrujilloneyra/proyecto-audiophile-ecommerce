@@ -13,12 +13,13 @@ export const ProductDetailFP = styled.div`
 	}
 
 	@media (width >= 1024px){
-		grid-template-columns: 54rem 1fr;
+		grid-template-columns: 52rem 1fr;
 		column-gap: 3.2rem;
 		/* padding: 8rem; */
 	}
 
 	@media (width >= 1100px){
+		grid-template-columns: 54rem 1fr;
 		padding: 5rem 8rem;
 	}
 
@@ -38,6 +39,11 @@ export const ProductDetailFP = styled.div`
 			}
 
 			@media (width >= 1024px){
+				width: 52rem;
+				height: 54rem;
+			}
+
+			@media (width >= 1100px){
 				width: 54rem;
 				height: 56rem;
 			}

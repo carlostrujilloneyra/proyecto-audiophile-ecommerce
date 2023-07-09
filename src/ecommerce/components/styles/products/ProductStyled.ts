@@ -4,6 +4,7 @@ export const ProductStyled = styled.div`
 	display: grid;
 	row-gap: 3.2rem;
 	padding: 5rem 2.4rem;
+	margin-top: 1.2rem;
 
 	@media (width >= 600px){
 		row-gap: 4.8rem;
@@ -12,9 +13,13 @@ export const ProductStyled = styled.div`
 
 	@media (width >= 1024px){
 		grid-template-columns: 54rem 1fr;
-		column-gap: 3.2rem;
+		column-gap: 2.4rem;
 		row-gap: 0;
-		padding: 8rem 7rem;
+		padding: 6rem 7rem;
+	}
+
+	@media (width >= 1100px){
+		column-gap: 3.2rem;
 	}
 
 	&.change{
@@ -35,8 +40,8 @@ export const ProductStyled = styled.div`
 		align-items: center;
 
 		img{
-		width: 32.7rem;
-		height: 35rem;
+		width: 30.7rem;
+		height: 33rem;
 		border-radius: .8rem;
 
 		@media (width >= 600px){
@@ -84,6 +89,11 @@ export const ProductStyled = styled.div`
 			color: #7d7d7d;
 			line-height: 1.4;
 			opacity: .8;
+
+			@media (width >= 1024px){
+				text-align: justify !important;
+			}
+
 		}
 
 	}
