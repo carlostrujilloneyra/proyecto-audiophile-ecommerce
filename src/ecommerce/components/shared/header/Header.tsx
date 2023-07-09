@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import { CartContainer } from "../../cart/CartContainer"
 import { HeaderContainer } from "../../styles/header"
-import { Logo, Nav } from "./components"
+import { Logo, Nav, QuantityProducts } from "./components"
 import { useLocation } from "react-router-dom"
 
 export const Header = () => {
@@ -31,11 +31,19 @@ export const Header = () => {
 
 				<Nav />
 
-				<img
-					src="/assets/icons/icon-cart.svg"
-					alt="image-cart"
-					onClick={handleShowCart}
-				/>
+				{/* Carrito de compras */}
+
+				<div style={{position: 'relative'}}>
+					<img
+						src="/assets/icons/icon-cart.svg"
+						alt="image-cart"
+						onClick={handleShowCart}
+					/>
+					
+					<QuantityProducts />
+
+				</div>
+
 
 				{
 					showCart &&

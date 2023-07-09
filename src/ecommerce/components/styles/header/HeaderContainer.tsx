@@ -108,3 +108,23 @@ export const List = styled.ul`
 
 
 `;
+
+export const QuantityProductsStyled = styled.div`
+	background-color: #D87D4A;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 2.5rem;
+	height: 2.5rem;
+	position: absolute;
+	content: '';
+	transform: translate(90%, -140%);
+
+	h3{
+		color: #fff;
+		font-size: 1.2rem;
+		font-weight: bolder;
+	}
+
+`;

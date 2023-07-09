@@ -36,7 +36,7 @@ export const CartContainer = ({ showCart, setShowCart }: Props) => {
 					<AiOutlineClose
 						style={{cursor:'pointer'}}
 						color="#000"
-						size='2.4rem'
+						size='2.2rem'
 						onClick={handleCloseCart}
 					/>
 				</div>
