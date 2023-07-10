@@ -3,4 +3,5 @@ export * from './HeadphonePage';
 export * from './SpeakerPage';
 export * from './EarphonePage';
 export * from './ProductPage';
+export * from './CheckoutPage';
 export * from './NotFoundPage';

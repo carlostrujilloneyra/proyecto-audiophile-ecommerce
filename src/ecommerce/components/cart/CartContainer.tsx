@@ -3,6 +3,7 @@ import { removeToCart } from "../../services/store/slices/cart"
 import { ButtonPrimary, CartStyled } from "../styles"
 import { AiOutlineClose, AiOutlineShoppingCart } from 'react-icons/ai'
 import { ProductAdd } from "./components"
+import { useNavigate } from "react-router-dom"
 
 interface Props{
 	showCart: boolean,
@@ -13,6 +14,8 @@ export const CartContainer = ({ showCart, setShowCart }: Props) => {
 
 	const dispatch = useAppDispatch();
 
+	const navigate = useNavigate();
+
 	const { products, priceTotal, quantityTotal } = useAppSelector(state => state.cart);
 
 	const handleCloseCart = () => {
@@ -21,6 +24,10 @@ export const CartContainer = ({ showCart, setShowCart }: Props) => {
 
 	const handleRemoveAllProducts = () => {
 		dispatch(removeToCart());
+	}
+
+	const handleNavigateCheckout = () => {
+		navigate('/checkout');
 	}
 
 	return (
@@ -71,6 +78,7 @@ export const CartContainer = ({ showCart, setShowCart }: Props) => {
 								<ButtonPrimary
 									style={{width:'100%', marginTop: 20}}
 									$padding="1.5rem 3.2rem"
+									onClick={handleNavigateCheckout}
 								>
 									Ir a pagar
 								</ButtonPrimary>

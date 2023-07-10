@@ -73,3 +73,9 @@
 	}
 
 }
+
+.errorMessage{
+	color: #CD2C2C;
+	font-size: 1.2rem;
+	margin-top: .4rem;
+}

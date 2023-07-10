@@ -6,5 +6,6 @@ export * from './typography';
 export * from './product-detail';
 export * from './products';
 export * from './cart';
+export * from './checkout';
 export * from './HeroStyled';
 export * from './MainHomeStyled';

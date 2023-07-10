@@ -33,8 +33,8 @@ export const ProductDetailTP = styled.div`
 
 		img{
 			border-radius: .8rem;
-			width: 30.7rem;
-			height: 17.4rem;
+			width: 31.7rem;
+			height: 18.4rem;
 			transition: all .4s;
 
 			@media (width >= 600px){
