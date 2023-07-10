@@ -22,7 +22,7 @@ export const Summary = () => {
             }}
           >
             <p>Sub Total</p>
-            <h3>s/{priceTotal}</h3>
+            <h3>s/{priceTotal.toLocaleString('en-US')}</h3>
 					</div>
 
 					<div
@@ -46,7 +46,7 @@ export const Summary = () => {
             }}
           >
             <p>Precio total</p>
-						<h3 style={{color: '#D87D4A'}}>s/{priceTotal + 25}</h3>
+						<h3 style={{color: '#D87D4A'}}>s/{(priceTotal + 25).toLocaleString('en-US')}</h3>
           </div>
 
         </div>

@@ -19,7 +19,7 @@ export const ProductSummary = ({ product }: Props) => {
 
 				<div>
 					<h3>{id}</h3>
-					<p>s/{price}</p>
+					<p>s/{price.toLocaleString('en-US')}</p>
 				</div>
 
 				<p>x{ quantity }</p>

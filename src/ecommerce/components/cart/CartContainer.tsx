@@ -18,6 +18,8 @@ export const CartContainer = ({ showCart, setShowCart }: Props) => {
 
 	const { products, priceTotal, quantityTotal } = useAppSelector(state => state.cart);
 
+	const priceTotalFormat = priceTotal.toLocaleString('en-US');
+
 	const handleCloseCart = () => {
 		setShowCart(!showCart);
 	}
@@ -71,7 +73,7 @@ export const CartContainer = ({ showCart, setShowCart }: Props) => {
 						<div className="footer-cart-container">
 							<div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
 								<p>Total</p>
-								<h3>s/{priceTotal}</h3>
+								<h3>s/{priceTotalFormat}</h3>
 							</div>
 
 							<div className="container-cart-button-footer">
