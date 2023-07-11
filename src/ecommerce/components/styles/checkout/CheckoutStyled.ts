@@ -4,6 +4,7 @@ export const CheckoutContainer = styled.div`
 	background-color: #f1f1f1;
 	padding: 1.2rem 2.4rem;
 	padding-bottom: 8rem;
+	position: relative;
 
 	@media (width >= 600px){
 		padding: 4rem 3.2rem;
