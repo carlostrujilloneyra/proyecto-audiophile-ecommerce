@@ -8,20 +8,20 @@ export const ModalStyled = styled.div`
 	padding: 3.6rem 3.2rem;
 	width: calc(100vw - 2.4rem);
 	height: auto;
-	top: 20%;
+	top: 24rem;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	z-index: 100;
 
 	@media (width >= 600px){
-		top: 25%;
+		top: 22rem;
 		width: 54rem;
-		height: 57rem;
-		padding: 4rem 4.8rem;
+		height: 54rem;
+		padding: 3.6rem 4.8rem;
 	}
 
 	@media (width >= 1024px){
-		top: 30%;
+		top: 22rem;
 	}
 
 	.icon-check{

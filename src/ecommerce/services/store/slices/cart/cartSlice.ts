@@ -75,6 +75,8 @@ export const cartSlice = createSlice({
 			state.products = [];
 			state.quantityTotal = 0;
 			state.priceTotal = 0;
+			// Añado esto línea para remover todo del localstorage correctamente!!!
+			localStorage.removeItem('cart');
 		}
 	}
 });

@@ -13,11 +13,13 @@ export const CheckoutContainer = styled.div`
 
 	@media (width >= 1024px){
 		padding: 2.4rem 5rem;
+		padding-top: 0;
 		padding-bottom: 12rem;
 	}
 
 	@media (width >= 1100px){
 		padding: 2.4rem 6rem;
+		padding-top: 0;
 		padding-bottom: 7rem;
 	}
 

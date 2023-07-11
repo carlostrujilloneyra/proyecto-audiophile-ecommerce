@@ -19,7 +19,7 @@ export const FormCheckout = () => {
     // console.log(data)
     setTimeout(() => {
       reset();
-    }, 1500);
+    }, 9500);
   };
 
   const handleClickRadio = ({
@@ -276,8 +276,9 @@ export const FormCheckout = () => {
           </div>
         </div>
 
-        {isValid && <Modal />}
-
+        {/* {isValid && <Modal />} */}
+        <Modal />
+        
       </CheckoutStyledGrid>
 
     </>
