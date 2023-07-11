@@ -13,11 +13,15 @@ interface CartRemoveState{
 	id: string | number
 }
 
+interface FormValidate{
+	value: boolean
+}
 interface initialStateInterface {
 	products: CartAddState [],
 	error: boolean,
 	priceTotal: number,
-	quantityTotal: number
+	quantityTotal: number,
+	formValidate: boolean
 }
 
 // Recuerda que initialState es igual a "state"
@@ -25,7 +29,8 @@ const initialState: initialStateInterface = getItem('cart') || {
 	products: [],
 	error: false,
 	priceTotal: 0,
-	quantityTotal: 0
+	quantityTotal: 0,
+	formValidate: false
 };
 
 export const cartSlice = createSlice({
@@ -34,6 +39,7 @@ export const cartSlice = createSlice({
 	reducers: {
 		// Agregar al carrito
 		addToCart(state, action: PayloadAction<CartAddState>) {
+			// Cuando agregas un producto que ya existe!!!!
 			if (state.products.filter(product => product.id === action.payload.id).length > 0) {
 				state.products.map(product => {
 					if (product.id === action.payload.id) {
@@ -77,8 +83,14 @@ export const cartSlice = createSlice({
 			state.priceTotal = 0;
 			// Añado esto línea para remover todo del localstorage correctamente!!!
 			localStorage.removeItem('cart');
+		},
+
+		// Formulario valido
+		validateForm(state, action: PayloadAction<FormValidate>) {
+			state.formValidate = action.payload.value
 		}
+
 	}
 });
 
-export const { addToCart, removeProduct ,removeToCart } = cartSlice.actions;
+export const { addToCart, removeProduct ,removeToCart, validateForm } = cartSlice.actions;

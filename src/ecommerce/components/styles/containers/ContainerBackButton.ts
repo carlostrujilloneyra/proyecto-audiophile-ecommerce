@@ -2,6 +2,10 @@ import { styled } from "styled-components";
 
 export const ContainerBackButton = styled.div`
 	padding: 3rem 2.4rem;
+
+	&.pointer-events{
+		pointer-events: none;
+	}
 	
 	@media (width >= 600px){
 		padding: 4rem 3.2rem;

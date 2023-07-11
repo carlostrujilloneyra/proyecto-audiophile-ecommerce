@@ -22,6 +22,7 @@ export const ModalStyled = styled.div`
 
 	@media (width >= 1024px){
 		top: 22rem;
+		height: auto;
 	}
 
 	.icon-check{

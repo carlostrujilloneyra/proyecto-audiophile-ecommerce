@@ -2,17 +2,20 @@ import { useNavigate } from "react-router-dom"
 import { CheckoutContainer, ContainerBackButton } from "../styles"
 import { FormCheckout } from "./components";
 import { useEffect } from "react";
+import { useAppSelector } from "../../services/store/hooks";
+
 
 export const Checkout = () => {
 
 	const navigate = useNavigate();
+
+	const { formValidate } = useAppSelector((state) => state.cart);
 
 	useEffect(() => {
 		const backgroundAllPage: any = document.getElementById('root');
 		backgroundAllPage.style.backgroundColor = '#f1f1f1'
 	}, [])
 	
-
 	const handleReturn = () => {
 		navigate(-1);
 	}
@@ -20,7 +23,7 @@ export const Checkout = () => {
 	return (
 		<>
 			
-			<ContainerBackButton style={{ backgroundColor: '#f1f1f1' }} className='container'>
+			<ContainerBackButton style={{ backgroundColor: '#f1f1f1' }} className={`container ${formValidate ? 'pointer-events': ''}`}>
 					<button
 						onClick={handleReturn}
 						className='button-back'
@@ -31,8 +34,9 @@ export const Checkout = () => {
 			
 			<CheckoutContainer>
 				
-				<div className="container checkout-products">
-					<FormCheckout />
+				<div className="container">
+					<FormCheckout
+					/>
 				</div>
 			
 			</CheckoutContainer>

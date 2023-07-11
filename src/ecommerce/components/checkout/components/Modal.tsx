@@ -13,7 +13,7 @@ const container = {
     opacity: 1,
     transition: {
       ease: cubicBezier(0.6, 0.55, 0.45, 0.55),
-      duration: 1.5,
+      duration: 1.3,
     },
   },
   exit: {

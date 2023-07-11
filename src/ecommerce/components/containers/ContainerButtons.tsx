@@ -45,6 +45,7 @@ export const ContainerButtons = ({ product }: Props) => {
 			duration: 5000
 		})
 
+		// Primero ejecutamos nuestra acción en redux
 		dispatch(addToCart({
 			id,
 			image,
@@ -54,6 +55,7 @@ export const ContainerButtons = ({ product }: Props) => {
 		}));
 	}
 
+	// Luego mandamos al localStorage, nuestros datos actualizados
 	useEffect(() => {
 		setItem('cart', data);
 	}, [handleAddProductToCart]);

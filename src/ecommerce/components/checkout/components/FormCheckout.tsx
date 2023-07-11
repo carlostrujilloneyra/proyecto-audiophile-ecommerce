@@ -2,25 +2,21 @@ import { useForm } from "react-hook-form";
 import { CheckoutStyledGrid, FormStyled } from "../../styles";
 import { ErrorMessage } from "./ErrorMessage";
 import { Summary } from "./Summary";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Modal } from "./Modal";
+import { useAppDispatch } from "../../../services/store/hooks";
+import { validateForm } from "../../../services/store/slices/cart";
 
 export const FormCheckout = () => {
   const [selectedOption, setSelectedOption] = useState<string>("card");
 
+  const dispatch = useAppDispatch();
+
   const {
     register,
     handleSubmit,
-    reset,
     formState: { errors, isValid }
   } = useForm();
-
-  const onSubmit = (data: any) => {
-    // console.log(data)
-    setTimeout(() => {
-      reset();
-    }, 9500);
-  };
 
   const handleClickRadio = ({
     target,
@@ -28,9 +24,20 @@ export const FormCheckout = () => {
     setSelectedOption(target.value);
   };
 
+  const onSubmit = (data: any) => {
+    // console.log(data)
+  };
+
+  useEffect(() => {
+    dispatch(validateForm({
+      value: isValid
+    }))
+  }, [onSubmit, isValid]);
+  
+
   return (
     <>
-      <CheckoutStyledGrid className="container">
+      <CheckoutStyledGrid className={`container ${isValid ? 'pointer-events': ''} `}>
         <FormStyled>
           <h2>Detalle de compra</h2>
           <p style={{ color: "#7d7d7d", marginBottom: 28 }}>
@@ -262,7 +269,7 @@ export const FormCheckout = () => {
             <Summary />
 
             <div style={{ display: "flex", justifyContent: "center", flexDirection: 'column' }}>
-              <button onClick={handleSubmit(onSubmit)}>
+              <button type="submit" onClick={handleSubmit(onSubmit)}>
                 Continuar y pagar
               </button>
               
@@ -275,11 +282,10 @@ export const FormCheckout = () => {
             </div>
           </div>
         </div>
-
-        {/* {isValid && <Modal />} */}
-        <Modal />
         
       </CheckoutStyledGrid>
+
+      {isValid && <Modal />}
 
     </>
   );

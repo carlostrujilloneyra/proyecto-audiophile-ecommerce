@@ -29,6 +29,10 @@ export const CheckoutStyledGrid = styled.div`
 	display: grid;
 	row-gap: 3.2rem;
 
+	&.pointer-events{
+		pointer-events: none;
+	}
+
 	@media (width >= 1024px){
 		grid-template-columns: 1fr 36rem;
 		column-gap: 3.2rem;
