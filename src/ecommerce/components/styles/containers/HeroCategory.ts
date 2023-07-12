@@ -9,7 +9,7 @@ export const HeroCategory = styled.div`
 	height: 10rem;
 
 	@media (width >= 600px){
-		height: 24rem;
+		height: 18rem;
 	}
 
 	h2{

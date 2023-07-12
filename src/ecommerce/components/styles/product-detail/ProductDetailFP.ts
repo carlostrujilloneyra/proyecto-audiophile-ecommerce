@@ -4,6 +4,7 @@ export const ProductDetailFP = styled.div`
 	display: grid;
 	row-gap: 3.2rem;
 	padding: 2.4rem;
+	padding-top: 0;
 
 	@media (width >= 800px){
 		grid-template-columns: 28rem 1fr;
@@ -21,6 +22,7 @@ export const ProductDetailFP = styled.div`
 	@media (width >= 1100px){
 		grid-template-columns: 54rem 1fr;
 		padding: 5rem 8rem;
+		padding-top: 3.2rem;
 	}
 
 	picture{

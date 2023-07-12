@@ -1,11 +1,17 @@
 import { categoriesShared } from "../../../data/shared/categories-shared"
 import { CategorySharedGrid } from "../../styles/containers"
 import { CategoryShared } from "./components"
+import { motion } from 'framer-motion';
 
 export const CategoriesShared = () => {
 	return (
 		<>
-			<div className="categories-shared container">
+			<motion.div
+				initial={{ opacity: 0 }}
+				whileInView={{opacity: 1}}
+				transition={{ ease: 'easeInOut', duration: 1 }}
+				className="categories-shared container"
+			>
 				<CategorySharedGrid>
 					{
 						categoriesShared.map(category => {
@@ -13,7 +19,7 @@ export const CategoriesShared = () => {
 						})
 					}
 				</CategorySharedGrid>
-			</div>
+			</motion.div>
 		</>
 	)
 }
