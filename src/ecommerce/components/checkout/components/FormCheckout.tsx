@@ -35,12 +35,7 @@ export const FormCheckout = () => {
     }
   }
 
-  // const onSubmit = (data: any) => {
-
-  // };
-
   const onSubmit = () => {
-    console.log('Estás dando clic en procesar compra de productos');
     setCheckoutExit(true);
   }
 

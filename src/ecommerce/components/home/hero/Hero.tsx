@@ -66,23 +66,26 @@ export const Hero = () => {
           style={{ backgroundImage: `url(${bgImage})` }}
           className="container"
         >
-					<motion.div
-						initial={{ x: -400 }}
-						animate={{ x: 0 }}
-						exit={{ x: 0 }}
-						transition={{ ease: 'easeInOut', duration: 1.8 }}
-					>
+          <motion.div
+            initial={{ x: -400 }}
+            animate={{ x: 0 }}
+            exit={{ x: 0 }}
+            transition={{ ease: "easeInOut", duration: 1.8 }}
+            className="container-info-hero"
+          >
             <NewProduct $color="#8c8c8c">{subtitle}</NewProduct>
             <h1>{title}</h1>
             <p>{description}</p>
-            <ButtonPrimary $padding="0">
-              <Link
-                to={`/product/${id}`}
-                style={{ color: "#fff", textDecoration: "none" }}
-              >
-                Ver producto
-              </Link>
-            </ButtonPrimary>
+            <div className="container-button">
+              <ButtonPrimary $padding="0">
+                <Link
+                  to={`/product/${id}`}
+                  style={{ color: "#fff", textDecoration: "none" }}
+                >
+                  Ver producto
+                </Link>
+              </ButtonPrimary>
+            </div>
           </motion.div>
         </HeroStyled>
       </motion.div>

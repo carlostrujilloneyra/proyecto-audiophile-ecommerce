@@ -55,4 +55,24 @@ export const HeroStyled = styled.div`
 
 	}
 
+	h3{
+		text-align: center;
+
+		@media (width >= 1024px){
+			text-align: start;
+		}
+
+	}
+
+	.container-button{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		@media (width >= 1024px){
+			justify-content: flex-start;
+		}
+
+	}
+
 `;
