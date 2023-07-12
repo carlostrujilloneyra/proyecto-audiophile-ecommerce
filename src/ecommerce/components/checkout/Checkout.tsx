@@ -14,6 +14,11 @@ export const Checkout = () => {
 	useEffect(() => {
 		const backgroundAllPage: any = document.getElementById('root');
 		backgroundAllPage.style.backgroundColor = '#f1f1f1'
+
+		return () => {
+			backgroundAllPage.style.backgroundColor = '#fff'
+		}
+
 	}, [])
 	
 	const handleReturn = () => {

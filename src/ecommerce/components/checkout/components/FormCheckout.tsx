@@ -4,13 +4,18 @@ import { ErrorMessage } from "./ErrorMessage";
 import { Summary } from "./Summary";
 import { useEffect, useState } from "react";
 import { Modal } from "./Modal";
-import { useAppDispatch } from "../../../services/store/hooks";
+import { useAppDispatch, useAppSelector } from "../../../services/store/hooks";
 import { validateForm } from "../../../services/store/slices/cart";
 
 export const FormCheckout = () => {
+
   const [selectedOption, setSelectedOption] = useState<string>("card");
+  const [productsEmpty, setproductsEmpty] = useState<boolean>(false);
+  const [checkoutExit, setCheckoutExit] = useState<boolean>(false);
 
   const dispatch = useAppDispatch();
+
+  const { products } = useAppSelector((state) => state.cart);
 
   const {
     register,
@@ -24,20 +29,34 @@ export const FormCheckout = () => {
     setSelectedOption(target.value);
   };
 
-  const onSubmit = (data: any) => {
-    // console.log(data)
-  };
+  const disabledButton = () => {
+    if (products.length === 0) {
+      setproductsEmpty(true);
+    }
+  }
+
+  // const onSubmit = (data: any) => {
+
+  // };
+
+  const onSubmit = () => {
+    console.log('Estás dando clic en procesar compra de productos');
+    setCheckoutExit(true);
+  }
 
   useEffect(() => {
     dispatch(validateForm({
       value: isValid
     }))
   }, [onSubmit, isValid]);
-  
 
+  useEffect(() => {
+    disabledButton();
+  }, [products])
+  
   return (
     <>
-      <CheckoutStyledGrid className={`container ${isValid ? 'pointer-events': ''} `}>
+      <CheckoutStyledGrid className={`container`}>
         <FormStyled>
           <h2>Detalle de compra</h2>
           <p style={{ color: "#7d7d7d", marginBottom: 28 }}>
@@ -58,7 +77,7 @@ export const FormCheckout = () => {
                     })}
                     autoComplete="off"
                     id="name"
-                    placeholder="Carlos"
+                    placeholder="Ejem: Gabriel Trujillo"
                   />
                   {/* Para mostrar error: */}
                   {errors.name?.type === "required" && (
@@ -75,7 +94,7 @@ export const FormCheckout = () => {
                     autoComplete="off"
                     type="email"
                     id="email"
-                    placeholder="augusto21_20@gmail.com"
+                    placeholder="Ejem: ZEUS21_20@gmail.com"
                     {...register("email", {
                       required: true,
                       pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/i,
@@ -269,7 +288,12 @@ export const FormCheckout = () => {
             <Summary />
 
             <div style={{ display: "flex", justifyContent: "center", flexDirection: 'column' }}>
-              <button type="submit" onClick={handleSubmit(onSubmit)}>
+              <button
+                className={`${productsEmpty ? 'disabled' : ''}`}
+                type="submit"
+                onClick={handleSubmit(onSubmit)}
+                disabled = {productsEmpty}
+              >
                 Continuar y pagar
               </button>
               
@@ -285,7 +309,7 @@ export const FormCheckout = () => {
         
       </CheckoutStyledGrid>
 
-      {isValid && <Modal />}
+      {checkoutExit && <Modal />}
 
     </>
   );

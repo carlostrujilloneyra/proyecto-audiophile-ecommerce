@@ -16,7 +16,6 @@ export const CategorySharedGrid = styled.div`
 	@media (width >= 1024px) {
 		grid-template-columns: repeat(3, minmax(28rem, 35rem));
 		column-gap: 2.4rem;
-		justify-content: flex-start;
 	}
 
 	h4{

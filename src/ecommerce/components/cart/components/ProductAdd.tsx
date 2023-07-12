@@ -10,11 +10,11 @@ interface Props{
 
 export const ProductAdd = ({ product }: Props) => {
 	
-	const [amount, setAmount] = useState<number>(1);
-
 	const data = useAppSelector((state) => state.cart);
 
-	const { id, image, price, name } = product;
+	const { id, image, price, name, quantity } = product;
+
+	const [amount, setAmount] = useState<number>(quantity);
 
 	const dispatch = useAppDispatch();
 
@@ -56,7 +56,7 @@ export const ProductAdd = ({ product }: Props) => {
 
 				<div className="container-buttons-product">
 					<button onClick={handleDecrementProduct}>-</button>
-					<span>{ amount }</span>
+					<span>{ quantity }</span>
 					<button onClick={handleIncrementProduct}>+</button>
 				</div>
 
