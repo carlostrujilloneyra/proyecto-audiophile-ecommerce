@@ -3,7 +3,7 @@
 Proyecto del lado Frontend realizado con React, Redux, Styled Components y TypeScript.
 
 <p align="center">
-  <img src="https://github.com/carlostrujilloneyra/proyecto-photosnap/assets/50873002/b4e640ff-0bcf-4279-b770-4f906d18e5db" alt="screenshot" width="90%">
+  <img src="https://github.com/carlostrujilloneyra/proyecto-audiophile-ecommerce/assets/50873002/c8ab22a8-cadc-4508-a573-eb3b0a3384c2" alt="screenshot" width="90%">
 </p>
 
 ---
@@ -16,3 +16,4 @@ Proyecto del lado Frontend realizado con React, Redux, Styled Components y TypeS
 
 ## Tecnologías
 - HTML, Styled Components, TypeScript, React, Redux y Framer Motion (para animaciones).
+
