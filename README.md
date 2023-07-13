@@ -8,7 +8,7 @@ Proyecto del lado Frontend realizado con React, Redux, Styled Components y TypeS
 
 ---
 
-## Getting Started
+## Instalación
 1. Clonar el proyecto.
 2. Ve a la carpeta del proyecto.
 3. Instala las dependencias ```npm install```
