@@ -91,7 +91,7 @@ export const FooterContainer = styled.footer`
 
 	.second-part-footer-paragraph{
 		margin-top: 1.2rem;
-
+	
 		p{
 			color: #fff;
 			opacity: .5;
@@ -99,6 +99,7 @@ export const FooterContainer = styled.footer`
 			line-height: 1.6;
 
 			@media (width >= 600px){
+				width: 85%;
 				text-align: justify;
 			}
 

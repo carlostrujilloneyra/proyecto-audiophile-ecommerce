@@ -2,16 +2,26 @@ import { Link } from "react-router-dom"
 import { routes } from "../../../../../router/routes"
 import { List, NavContainer } from "../../../styles/header"
 
-export const Nav = () => {
+interface Props{
+	openNav?: boolean,
+	classDifferent: boolean
+}
+
+export const Nav = ({ openNav, classDifferent }: Props) => {
+
+	const handleTop = () => {
+		window.scrollTo(0, 0);
+	}
+
 	return (
 		<>
-			<NavContainer>
-				<List>
+			<NavContainer className={`${openNav ? 'newClass' : ''} ${classDifferent ? 'classDifferent' : ''}`}>
+				<List className={`${classDifferent ? 'classDifferent' : ''}`}>
 					{
 						routes.map((route) => {
 							return (
 								<li key={route.name}>
-									<Link to={route.to}>
+									<Link onClick={handleTop} to={route.to}>
 										{route.name}
 									</Link>
 								</li>

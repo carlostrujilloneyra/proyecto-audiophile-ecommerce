@@ -7,8 +7,12 @@ import { useLocation } from "react-router-dom"
 export const Header = () => {
 
 	const [showCart, setShowCart] = useState<boolean>(false);
+	const [openNav, setOpenNav] = useState<boolean>(false);
 
 	const location = useLocation();
+	const src = `/assets/icons/${openNav ? 'icon-close.svg' : 'icon-hamburger.svg'}`;
+
+	const pathName = location.pathname;
 
 	const handleShowCart = () => {
 		setShowCart(!showCart);
@@ -16,23 +20,39 @@ export const Header = () => {
 
 	useEffect(() => {
 		setShowCart(false);
-	}, [location])
-	
+	}, [location]);
 
+	const handleOpenNav = () => {
+		setTimeout(() => {
+			setOpenNav(!openNav);
+		}, 100);
+	}
+
+	// Cerrar el menú responsivo al cambiar de pestaña:
+	useEffect(() => {
+		setOpenNav(false);
+	}, [pathName])
+	
 	return (
 		<>
 			<HeaderContainer className="container">
 
-				<div className="container-hamburguer">
-					<img src="/assets/icons/icon-hamburger.svg" alt="icon-hamburguer" />
+				<div					
+					className="container-hamburguer"
+				>
+					<img
+						src= {src}
+						alt="icon-hamburguer"
+						onClick={handleOpenNav}
+					/>
 				</div>
 
 				<Logo />
 
-				<Nav />
+				{/* Barra de navegación */}
+				<Nav openNav={openNav} classDifferent={true} />
 
 				{/* Carrito de compras */}
-
 				<div style={{position: 'relative'}}>
 					<img
 						src="/assets/icons/icon-cart.svg"
@@ -43,7 +63,6 @@ export const Header = () => {
 					<QuantityProducts />
 
 				</div>
-
 
 				{
 					showCart &&

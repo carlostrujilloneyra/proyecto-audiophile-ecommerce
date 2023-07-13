@@ -16,8 +16,8 @@ export const HeadphonePage = () => {
 				initial={{ opacity: 0}}
 				animate={{ opacity: 1}}
 				transition={{
-					duration: 1.5,
-					cubicBezier: [0.6, 0.01, -0.05, 0.75]
+					duration: 1.3,
+					cubicBezier: [0.6, 0.01, -0.05, 0.45]
 				}}
 			>
         <HeroCategory className="container">

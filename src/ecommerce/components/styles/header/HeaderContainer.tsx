@@ -30,11 +30,80 @@ export const HeaderContainer = styled.header`
 
 // Estilos para el nav
 export const NavContainer = styled.nav`
-	display: none;
+	&.classDifferent{
+		background-color: #000;
+		border-radius: .8rem;
+		position: absolute;
+		top: -40rem;
+		left: 50%;
+		opacity: 0;
+		width: calc(100% - 4.8rem);
+		transform: translateX(-50%);
+		transition: all .6s;
+		transition-delay: .2s;
 
-	@media (width >= 1024px){
-		display: block;
+		ul{
+			padding: 3.2rem 2.4rem;
+			
+			@media(width >= 600px){
+				padding: 4.8rem 3.2rem;
+			}
+
+			@media(width >= 1024px){
+				padding: 0;
+			}
+
+			li{
+				margin-top: 1.2rem;
+				margin-bottom: 2.4rem;
+				
+				@media (width >= 1024px){
+					margin-top: 0;
+					margin-bottom: 0;
+				}
+				
+				a{
+					font-size: 1.5rem;
+					
+					@media (width >= 1024px){
+						font-size: 1.4rem;
+						
+						&:hover{
+							font-size: 2rem;
+						}
+					
+					}
+			}
+		}
+		}
+		
+		@media (width >= 1024px){
+			background-color: transparent;
+			display: block;
+			position: static;
+			width: 100%;
+			left: auto;
+			border-radius: 0;
+			opacity: 1;
+			transform: translateX(0);
+			transition: 0;
+			transition-delay: 0;
+		}
+
 	}
+
+	&.newClass{
+		opacity: 1;
+		top: 10.2rem;
+		transition: all .6s;
+		
+		@media (width >= 600px){
+			width: calc(100% - 6.4rem);
+			transform: translateX(-50%);
+		}
+	
+	}
+
 
 `;
 
@@ -45,6 +114,25 @@ export const List = styled.ul`
 	list-style: none;
 	justify-content: center;
 	transition: all .4s;
+
+	&.classDifferent{
+		@media (width >= 600px){
+			flex-direction: column;
+			padding: 0;
+	}
+
+	@media (width >= 1024px){
+		flex-direction: row;
+		padding: 0;
+
+		/* li{
+			margin-top: 0;
+			margin-bottom: 0;
+		} */
+
+	}
+
+	}
 
 	@media (width >= 600px){
 		flex-direction: row;
@@ -72,7 +160,7 @@ export const List = styled.ul`
 
 	a{
 	color: white;
-	font-size: 1.3rem;
+	font-size: 1.4rem;
 	font-weight: bolder;
 	letter-spacing: .1rem;
 	position: relative;
@@ -82,7 +170,7 @@ export const List = styled.ul`
 
 	&:hover{
 		color: #D87D4A;
-		font-size: 1.6rem;
+		font-size: 1.8rem;
 		transition: all .4s;
 	}
 
@@ -105,7 +193,6 @@ export const List = styled.ul`
 		transition: all .4s;
 	}
 }
-
 
 `;
 

@@ -9,7 +9,7 @@ export const Footer = () => {
 				
 				<div className="first-part-footer">
 					<Logo />
-					<Nav/>
+					<Nav classDifferent={false}/>
 				</div>
 
 				<div className="second-part-footer">
