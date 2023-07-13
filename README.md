@@ -1,4 +1,4 @@
-# proyecto-audiophile-ecommerce
+# Proyecto-Audiophile-Ecommerce
 
 Proyecto del lado Frontend realizado con React, Redux, Styled Components y TypeScript.
 
