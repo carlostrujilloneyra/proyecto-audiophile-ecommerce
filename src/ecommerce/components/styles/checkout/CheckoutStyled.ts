@@ -81,7 +81,7 @@ export const CheckoutStyledGrid = styled.div`
 		margin-top: 2.4rem;
 		text-transform: uppercase;
 		transition: all .4s;
-
+		
 		&.disabled{
 			cursor: not-allowed;
 			opacity: .5;

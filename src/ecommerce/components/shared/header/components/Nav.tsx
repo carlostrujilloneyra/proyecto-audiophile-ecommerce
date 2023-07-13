@@ -9,7 +9,7 @@ interface Props{
 
 export const Nav = ({ openNav, classDifferent }: Props) => {
 
-	const handleTop = () => {
+	const handleTopZero = () => {
 		window.scrollTo(0, 0);
 	}
 
@@ -21,7 +21,7 @@ export const Nav = ({ openNav, classDifferent }: Props) => {
 						routes.map((route) => {
 							return (
 								<li key={route.name}>
-									<Link onClick={handleTop} to={route.to}>
+									<Link onClick={handleTopZero} to={route.to}>
 										{route.name}
 									</Link>
 								</li>

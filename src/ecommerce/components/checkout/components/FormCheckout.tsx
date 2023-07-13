@@ -37,6 +37,7 @@ export const FormCheckout = () => {
 
   const onSubmit = () => {
     setCheckoutExit(true);
+    window.scrollTo(0, 0);
   }
 
   useEffect(() => {

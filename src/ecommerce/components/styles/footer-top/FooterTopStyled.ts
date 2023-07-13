@@ -28,10 +28,12 @@ export const FooterTopStyled = styled.article`
 		height: 100%;
 		transition: all .4s;
 
-		&:hover{
+		@media (width >= 1024px){
+			&:hover{
 				transform: scale(1.08);
 				transition: all .4s;
 			}
+		}
 
 	}
 
