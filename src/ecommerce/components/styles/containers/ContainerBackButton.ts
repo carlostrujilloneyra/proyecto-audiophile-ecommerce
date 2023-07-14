@@ -1,6 +1,7 @@
 import { styled } from "styled-components";
 
 export const ContainerBackButton = styled.div`
+	position: relative;
 	padding: 3rem 2.4rem;
 	z-index: -1;
 

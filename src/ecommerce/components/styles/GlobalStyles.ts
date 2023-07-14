@@ -12,6 +12,10 @@ export const GlobalStyles = createGlobalStyle`
 		font-family: 'Manrope', sans-serif;
 	}
 
+	body{
+		/* padding-top: 9.6rem; */
+	}
+
 	.container{
 		max-width: 150rem;
 		margin: auto;

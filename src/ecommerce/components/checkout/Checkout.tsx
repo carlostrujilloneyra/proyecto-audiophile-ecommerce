@@ -28,7 +28,7 @@ export const Checkout = () => {
 	return (
 		<>
 			
-			<ContainerBackButton style={{ backgroundColor: '#f1f1f1' }} className={`container ${formValidate ? 'pointer-events': ''}`}>
+			<ContainerBackButton style={{ backgroundColor: '#f1f1f1', zIndex: 2 }} className={`container ${formValidate ? 'pointer-events': ''}`}>
 					<button
 						onClick={handleReturn}
 						className='button-back'

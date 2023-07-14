@@ -11,7 +11,15 @@ export const HeaderContainer = styled.header`
 	justify-content: center;
 	justify-items: center;
 	padding: 3.2rem 2.4rem;
-	position: relative;
+	/* width: 100%; */
+	z-index: 10;
+	transition: all .4s;
+
+	&.sticky{
+		position: sticky;
+		top: 0;
+		transition: all .4s;
+	}
 
 	img{
 		cursor: pointer;
@@ -41,6 +49,7 @@ export const NavContainer = styled.nav`
 		transform: translateX(-50%);
 		transition: all .6s;
 		transition-delay: .2s;
+		z-index: 100;
 
 		ul{
 			padding: 3.2rem 2.4rem;
