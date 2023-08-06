@@ -4,7 +4,6 @@ import { routes } from "./routes";
 import {
   CheckoutPage,
   HomePage,
-  NotFoundPage,
   ProductPage,
 } from "../ecommerce/pages";
 import { ScrollTop } from "../ecommerce/components/shared/ScrollTop";
