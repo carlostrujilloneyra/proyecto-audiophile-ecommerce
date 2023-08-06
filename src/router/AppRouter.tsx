@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import { Footer, Header } from "../ecommerce/components/shared";
 import { routes } from "./routes";
 import {
@@ -27,13 +27,13 @@ export const AppRouter = () => {
             return <Route key={name} path={path} element={<Component />} />;
           })}
 
-          <Route path="product/:productId" element={<ProductPage />} />
+          <Route path="/product/:productId" element={<ProductPage />} />
 
           {/* TODO: Crear una página para el checkout */}
           <Route path="/checkout" element={<CheckoutPage />} />
 
           {/* Ruta que no existe */}
-          <Route path="*" element={<NotFoundPage />} />
+          <Route path="*" element={<Navigate to = '/' />} />
         </Routes>
       </AnimatePresence>
 
